@@ -203,20 +203,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 pt-5">
-                                <h4 class="darkcolor pb-4 wow fadeInLeft text-center" style="font-size: 18px;">Nuestra <span style="color: #ff9c07">asesoría</span> consistirá en</h4>
-                                <div class="row">
-                                    <div class="col wow fadeInLeft">
-                                        <span class="sub-heading-text"><span class="pr-2 li">►</span>Valuar, analizar y estructurar el financiamiento adecuado para los proyectos de propósito especifico, filiales o subsidiarias de EVENPLAN a través de diferentes instrumentos de deuda o capital</span>
-                                        <span class="sub-heading-text"><span class="pr-2 li">►</span>El monto de la o las operaciones a ser realizadas será determinado una vez que BROAD haya analizado los flujos de efectivo correspondientes, así como la documentación legal pertinente</span>
-                                    </div>
-                                    <div class="col wow fadeInRight">
-                                        <span class="sub-heading-text"><span class="pr-2 li">►</span>BROAD podrá llevar a cabo las actividades anteriores por sí mismo o mediante la contratación de expertos en las distintas áreas de especialidad, tales como despachos de abogados, contadores públicos, técnicos independientes y fiduciarios que en todo caso serán sufragados por la Empresa previa autorización</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -682,7 +668,7 @@
 
 
 <!--Blogs section start-->
-<section class="blog-sec" id="blog-sec">
+<!-- <section class="blog-sec" id="blog-sec">
     <div class="left-overlay"></div>
     <div class="container position-relative">
         <div class="blog-inner-overlay"></div>
@@ -705,7 +691,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--Blogs section end-->
 
 
