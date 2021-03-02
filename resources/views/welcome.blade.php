@@ -441,92 +441,53 @@
 <div class="sponser-sec padding-top" id="asesor-financiero">
     <div class="container">
         <div class="row text-center">
-            <div class="col-12 py-4 wow fadeInRight" >
+            <div class="col-12 py-4 wow fadeInRight text-center" >
                 <h4 class="heading-title pb-3">Productos de <span class="text-yellow">tesorería</span> en los que hemos <span class="text-blue">participado</span> y <span class="text-blue">cerrado</span></h4>
                 <div class="sponser-tags owl-carousel owl-theme">
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/bimbo.png') }}">
                         </div>
-                        <div class="content_footer">
-                            <p class="sub_title">Cross Currency Swap</p>
-                            <p class="sub_years">10 años</p>
-                            <p class="sub_title black">USD $40 millones</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/mexichem.png') }}">
-                        </div>
-                        <div class="content_footer">
-                            <p class="sub_title">Coupon Only Swap</p>
-                            <p class="sub_years">7 años</p>
-                            <p class="sub_title black">EUR/USD $70 millones</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/alsea.png') }}">
                         </div>
-                        <div class="content_footer">
-                            <p class="sub_title">FX Options | Knock Out Forward</p>
-                            <p class="sub_years">1 años</p>
-                            <p class="sub_title black">USD $35 millones</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/palacio_de_hierro.png') }}">
-                        </div>
-                        <div class="content_footer">
-                            <p class="sub_title">Interest Rate Swap</p>
-                            <p class="sub_years">5 años</p>
-                            <p class="sub_title black">USD $2,500 millones</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/gerdau.png') }}">
                         </div>
-                        <div class="content_footer">
-                            <p class="sub_title">Interest Rate Swap</p>
-                            <p class="sub_years">7 años</p>
-                            <p class="sub_title black">USD $5,000 millones</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/jugos_del_valle.png') }}">
-                        </div>
-                        <div class="content_footer">    
-                            <p class="sub_title">Interest Rate Swap</p>
-                            <p class="sub_years">5 años</p>
-                            <p class="sub_title black">USD $1,000 millones</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/tmm.png') }}">
                         </div>
-                        <div class="content_footer">
-                            <p class="sub_title">Interest Rate Cap</p>
-                            <p class="sub_years">3 años</p>
-                            <p class="sub_title black">USD $10,500 millones</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/tv_azteca.png') }}">
                         </div> 
-                        <div class="content_footer">
-                            <p class="sub_title">Coupon Only Swap</p>
-                            <p class="sub_years">7 años</p>
-                            <p class="sub_title black">USD/MXN $400 millones</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 py-4 wow fadeInLeft">
+            <div class="col-12 py-4 wow fadeInLeft text-center" >
             <h4 class="heading-title pb-3">Productos de <span class="text-yellow">tesorería</span> en los que hemos <span class="text-blue">valuado</span> y <span class="text-blue">cerrado</span></h4>
                 <div class="sponser-tags owl-carousel owl-theme">
                     <div class="item">
@@ -571,7 +532,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 py-4 wow fadeInRight">
+            <div class="col-12 py-4 wow fadeInRight text-center">
             <h4 class="heading-title pb-3">Banca de <span class="text-yellow">inversión</span> en los que hemos <span class="text-blue">estructurado</span> y <span class="text-blue">vendido</span></h4>
                 <div class="sponser-tags owl-carousel owl-theme">
                     <div class="item">
@@ -616,7 +577,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 py-4 wow fadeInLeft">
+            <div class="col-12 py-4 wow fadeInLeft text-center">
             <h4 class="heading-title pb-3">Asesor <span class="text-yellow">financiero</span> líder en la <span class="text-blue">infraestructura</span> de <span class="text-blue">financiamientos bursátiles</span></h4>
                 <div class="sponser-tags owl-carousel owl-theme">
                     <div class="item">

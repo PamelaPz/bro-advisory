@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +14,7 @@ use App\Http\Controller\LandingController;
 */
 
 Route::get('/', 'App\Http\Controllers\LandingController@welcome')->name('welcome');
+Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('dashboard');
+Route::get('/register', 'App\Http\Controllers\Register@index')->name('register');
+Route::get('/login', 'App\Http\Controllers\Register@login')->name('login');
+
