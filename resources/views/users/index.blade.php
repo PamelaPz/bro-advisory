@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <meta charset="utf-8" />
@@ -148,12 +148,12 @@
                       <p>{{ __('RTL Support') }}</p>
                     </a>
                   </li>
-                  <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
+                  {{--<li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
                     <a class="nav-link text-white bg-danger" href="{{ route('upgrade') }}">
                       <i class="material-icons text-white">unarchive</i>
                       <p>{{ __('Upgrade to PRO') }}</p>
                     </a>
-                  </li>
+                  </li>--}}
                 </ul>
               </div>
             </div>
