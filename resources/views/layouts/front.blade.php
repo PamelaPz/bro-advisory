@@ -13,7 +13,7 @@
     <!-- Page Title -->
     <title>BRO ADVISORY </title>
     <!-- Favicon -->
-    <link href="{{ asset('bro-advisory/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('bro-advisory/img/favicon.ico') }}" rel="icon">
     <!-- Bundle -->
     <link href="{{ asset('bro-advisory/vendor/css/bundle.min.css') }}" rel="stylesheet">
     <!-- Plugin Css -->
