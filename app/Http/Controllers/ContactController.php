@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Advisory;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class AdvisoryController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class AdvisoryController extends Controller
      */
     public function index()
     {
-        $advisories = Advisory::all();
-
-        return view('asesoria.index', compact('advisories'));
+        //
     }
 
     /**
@@ -59,10 +57,9 @@ class AdvisoryController extends Controller
      */
     public function edit($id)
     {
-        $advisory = Advisory::find($id);
-        $advisories = Advisory::all();
+        $contact = Contact::find($id);
 
-        return view('asesoria.edit', compact('advisory', 'advisories'));
+        return view('contacto.edit', compact('contact'));
     }
 
     /**

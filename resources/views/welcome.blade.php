@@ -131,16 +131,18 @@
                     <div class="col-12 services pt-4">
                         <h4 class="darkcolor py-4 wow fadeInLeft text-center"><span style="color: #ff9c07">ASESORAMIENTO</span> EN</h4>
                         <div class="row text-center">
-                            <div class="col-12 col-lg-6 wow fadeInLeft card-icons pb-3">
-                                <div class="service-card">
-                                    <div class="icon-holder">
-                                    <i class="lni lni-investment"></i>
+                            @foreach ( $advisories as $advisory )                 
+                                <div class="col-12 col-lg-6 card-icons pb-3">
+                                    <div class="service-card wow fadeInLeft">
+                                        <div class="icon-holder">
+                                            <i class="lni {{ $advisory->icon }}"></i>
+                                        </div>
+                                    <h4 class="card-heading pb-3 wow fadeInRight">{{ $advisory->subh4 }}</h4>
+                                    <p class="text-dark text-left sub-heading-text wow fadeInLeft">{{ $advisory->p1 }}</p>
                                     </div>
-                                <h4 class="card-heading pb-3">CAPITAL</h4>
-                                <p class="text-dark text-left sub-heading-text">Asesoría para preparar compañías privadas para emisiones públicas de acciones (IPOs), Follow-on, oferta secundarias, suscripciones y ofertas dirigidas, entre otros.</p>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-6 wow fadeInRight card-icons pb-3">
+                            @endforeach                     
+                            {{--<div class="col-12 col-lg-6 wow fadeInRight card-icons pb-3">
                                 <div class="service-card">
                                     <div class="icon-holder">
                                     <i class="lni lni-stats-up"></i>
@@ -148,25 +150,7 @@
                                 <h4 class="card-heading pb-3">DEUDA</h4>
                                 <p class="text-dark text-left sub-heading-text">Brindamos un servicio integral para el levantamiento de recursos a través de colocaciones de capital, mezzanine, instrumentos convertibles, crédito preferente deuda subordinada y otros instrumentos híbridos a nivel nacional e internacional.</p>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-6 wow fadeInLeft card-icons">
-                                <div class="service-card">
-                                    <div class="icon-holder">
-                                    <i class="lni lni-handshake"></i>
-                                </div>
-                                <h4 class="card-heading pb-3">M&A</h4>
-                                <p class="text-dark text-left sub-heading-text">Brindamos el servicio de fusiones y Adquisiciones (M&A), desinversiones y escisiones (Spin-off), adquisiciones apalancadas (LBO, MBO y MBI), alianzas estratégicas y joint-ventures, ampliaciones y reestructuras de capital, proyectos de evaluación financiera y valuación de empresas y activos (fairness opinion) para empresas públicas y privadas en diversas industrias en mercados nacionales como internacionales.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 wow fadeInRight card-icons">
-                                <div class="service-card">
-                                    <div class="icon-holder">
-                                    <i class="lni lni-invest-monitor"></i>
-                                </div>
-                                <h4 class="card-heading pb-3">FX & IR</h4>
-                                <p class="text-dark text-left sub-heading-text">Brindamos asesoría en: optimización y cobertura de riesgos de tipo de cambio de diversas monedas (FX options) y tasa de interés (CCS, IRS, COS, Swaptions, Caps) con derivados, contratos ISDA y líneas de crédito para operar TH, valuaciones de MTM y llamadas de margen, valuación de costos reales de diversas estrategias presentadas por bancos.</p>
-                                </div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -646,17 +630,17 @@
             </div>
             <div class="col-12 col-lg-5 text-center text-lg-left position-relative">
                 <div class="contact-details wow fadeInRight">
-                    <h4 class="heading text-uppercase">Encuentranos en</h4>
+                    <h4 class="heading text-uppercase">{{ $contact->h4 }}</h4>
                     <!-- <p class="text">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered .
                     </p> -->
                     <ul>
-                        <li style="width: 100% !important;"><i class="lni lni-map-marker addr"></i>Javier Barros Sierra 540, Torre 1, Piso 5 Santa Fe, C.P. 01210 CDMX </li>
+                        <li style="width: 100% !important;"><i class="lni lni-map-marker addr"></i>{{ $contact->address }}</li>
                         <li><i class="lni lni-phone"></i>
-                        <span>(55) 3633 2080</span>
-                        <span>(55) 7672 4817</span>
+                        <span>{{ $contact->phone1 }}</span>
+                        <span>{{ $contact->phone1 }}</span>
                         </li>
-                        <li><i class="lni lni-envelope"></i>abringas@bropartners.com</li>
+                        <li><i class="lni lni-envelope"></i>{{ $contact->email }}</li>
                     </ul>
                 </div>
                 <img src="{{ asset('bro-advisory/img/contact-background.png') }}" class="contact-background" alt="contact">

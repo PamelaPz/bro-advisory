@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'asesoria', 'titlePage' => __('Banners')])
+@extends('layouts.app', ['activePage' => 'asesoria', 'titlePage' => __('Asesoria')])
 
 @section('content')
     <div class="content">
@@ -20,23 +20,22 @@
                             <div class="tab-content">
                                 <table class="table">
                                     <tbody>
-                                        @foreach ($services as $service)
+                                        @foreach ($advisories as $advisory)
                                             <tr>
-                                                <td width="20%">
+                                                <td width="20%" style="text-align: center;">
                                                     <a href="">
-                                                        <b>{{ $service->h4 }}</b><br>
-                                                        {{ $service->span }}
+                                                    <i class="lni {{ $advisory->icon }}" style="font-size: 3rem"></i>
+                                                    <br>
+                                                        <b>{{ $advisory->subh4 }}</b>
                                                     </a>
                                                 </td>
                                                 <td>
                                                     <a href="">
-                                                        <b>{{ $service->service1 }}</b><br>
-                                                        {{ $service->service2 }}<br>
-                                                        ...
+                                                        <b>{{ $advisory->p1 }}</b>
                                                     </a>
                                                 </td>
                                                 <td class="td-actions text-right">
-                                                    <a href="{{ route('servicios.edit', $service->id ) }}" type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                                    <a href="{{ route('asesoria.edit', $advisory->id ) }}" type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
                                                         <i class="material-icons">edit</i>
                                                     </a>
 

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'teso_inv', 'titlePage' => __('About')])
+@extends('layouts.app', ['activePage' => 'teso_inv', 'titlePage' => __('Tesorería e Inversión')])
 
 @section('content')
     <div class="content">

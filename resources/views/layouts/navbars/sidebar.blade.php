@@ -17,7 +17,6 @@
             <p>{{ __('Dashboard') }}</p>
         </a>
       </li>
-      {{-- Laravel examples --}}
       <li class="nav-item{{ $activePage == 'banners' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('banners.index') }}">
             <i class="material-icons">chrome_reader_mode</i>
@@ -26,13 +25,13 @@
       </li>
       <li class="nav-item{{ $activePage == 'about' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('about.edit', 1) }}">
-          <i class="material-icons">location_ons</i>
+          <i class="material-icons">book</i>
             <p>{{ __('Acerca de') }}</p>
         </a>
       </li>
       <li class="nav-item {{ ($activePage == 'asesoria' || $activePage == 'teso_inv') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
-          <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>
+          <i class="material-icons">fact_check</i>
           <p>{{ __('Servicios') }}
             <b class="caret"></b>
           </p>
@@ -42,7 +41,7 @@
             <li class="nav-item{{ $activePage == 'teso_inv' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('servicios.index') }}">
                 <span class="sidebar-mini"> T&I </span>
-                <span class="sidebar-normal"> {{ __('Tesorería e Inversión') }} </span>
+                <span class="sidebar-normal"> {{ __('Tesorería, Inversión') }} </span>
               </a>
             </li>
             <li class="nav-item{{ $activePage == 'asesoria' ? ' active' : '' }}">
@@ -54,16 +53,18 @@
           </ul>
         </div>
       </li>
+
+      
+      <li class="nav-item{{ $activePage == 'contacto' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('contacto.edit', 1) }}">
+          <i class="material-icons">near_me</i>
+          <p>{{ __('Contacto') }}</p>
+        </a>
+      </li>
       {{-- <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('typography') }}">
           <i class="material-icons">library_books</i>
             <p>{{ __('Typography') }}</p>
-        </a>
-      </li> --}}
-      {{-- <li class="nav-item{{ $activePage == 'icons' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('icons') }}">
-          <i class="material-icons">bubble_chart</i>
-          <p>{{ __('Icons') }}</p>
         </a>
       </li> --}}
       {{-- <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">
