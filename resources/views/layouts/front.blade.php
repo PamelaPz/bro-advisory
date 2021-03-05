@@ -82,10 +82,10 @@
                 <div class="row">
                     <div class="col-4 col-lg-2">
                         <a class="navbar-brand simple-nav-logo link" href="index-Bro-Advisory.html">
-                            <img src="{{ asset('bro-advisory/img/Logo-1.png') }}" alt="logo">
+                            <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
                         <a class="navbar-brand fixed-nav-logo link" href="index-Bro-Advisory.html">
-                            <img src="{{ asset('bro-advisory/img/Logo-1.png') }}" alt="logo">
+                            <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
                     </div>
                     <div class="col-8 col-lg-10 simple-navbar d-flex align-items-center justify-content-end" id="simple-navbar">
@@ -120,7 +120,7 @@
             <div class="container">
                 <div class="row w-100 side-menu-inner-content">
                 <div class="col-12 d-flex justify-content-center align-items-center text-center">
-                    <a href="index-Bro-Advisory.html" class="sideNav"><img src="{{ asset('bro-advisory/img/Logo-1.png') }}" alt="logo"></a>
+                    <a href="index-Bro-Advisory.html" class="sideNav"><img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo"></a>
                 </div>
                 <div class="col-12 col-lg-8">
                     <nav class="side-nav w-100">
