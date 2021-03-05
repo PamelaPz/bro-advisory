@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class About extends Model
 {
     use HasFactory;
+
+    protected $fillable = ([
+        'h4',
+        'span',
+        'p1',
+        'p2'
+    ]);
 }
