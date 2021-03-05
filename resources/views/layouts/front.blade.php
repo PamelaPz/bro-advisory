@@ -81,10 +81,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-lg-2">
-                        <a class="navbar-brand simple-nav-logo link" href="index-Bro-Advisory.html">
+                        <a class="navbar-brand simple-nav-logo link" href="{{ route('welcome') }}">
                             <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
-                        <a class="navbar-brand fixed-nav-logo link" href="index-Bro-Advisory.html">
+                        <a class="navbar-brand fixed-nav-logo link" href="{{ route('welcome') }}">
                             <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
                     </div>
@@ -113,14 +113,14 @@
         </a>
     </div>
     <!--Side Nav-->
-    <div class="side-menu hidden side-menu-opacity">
+    <div class="side-menu hidden side-menu-opacity" style="background-image: url('bro-advisory/img/example12.jpg');background-size: cover;background-position: center;">
         <div class="bg-overlay"></div>
         <div class="inner-wrapper">
             <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
             <div class="container">
                 <div class="row w-100 side-menu-inner-content">
                 <div class="col-12 d-flex justify-content-center align-items-center text-center">
-                    <a href="index-Bro-Advisory.html" class="sideNav"><img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo"></a>
+                    <a href="{{ route('welcome') }}" class="sideNav"><img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo"></a>
                 </div>
                 <div class="col-12 col-lg-8">
                     <nav class="side-nav w-100">
