@@ -90,16 +90,13 @@
             <div class="col-12 col-lg-6 about-area padding-top padding-bottom text-center text-lg-left">
                 <div class="about-content wow fadeInRight">
                     <div class="about-inner-content">
-                        <h4 class="heading text-uppercase">BRO<span class="text-yellow" style="display:inline-block">AD</span></h4>
+                        <h4 class="heading text-uppercase">{{ $about->h4 }}<span class="text-yellow" style="display:inline-block">{{ $about->span}}</span></h4>
                         <p class="text">
-                            Es una firma de asesoría financiera y legal a empresas, inversionistas institucionales, fondos y financial sponsors, en estructuración de financiamiento, IPOs, procesos de M&A, valuaciones y reestructuras y estrategias de optimización, valuación y cobertura de riesgos de tipo de cambio y tasa de interés con productos derivados.
+                            {{ $about->p1 }}
                         </p>
                         <p class="text">
-                            Nuestra especialidad se centra en la estructuración de productos financieros que atiendan a las necesidades de fondeo y cobertura de las empresas.
+                            {{ $about->p2 }}
                         </p>
-                        <!-- <a href="#about-sec" class="btn white-trans-btn rounded-pill">LEER MÁS
-                        <span></span><span></span><span></span><span></span>
-                        </a> -->
                     </div>
                 </div>
             </div>
@@ -115,34 +112,22 @@
             <div class="col-12 stats-heading-area">
                 <h4 class="heading text-uppercase text-center wow fadeIndown">Nuestros servicios</h4>
                 <div class="row">
-                    <div class="col-12 services pt-4" >
-                        <h4 class="darkcolor py-4 text-center wow fadeInLeft">PRODUCTOS DE <span style="color: #ff9c07">TESORERÍA</span></h4>
-                        <div class="row">
-                            <div class="col wow fadeInLeft">
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Análisis y valuación de cualquier estrategia de cobertura propuesta</span>
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Obtención del “costo flat” de cualquier producto de tesorería</span>
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Recomendación de la mejor estrategia de optimización y cobertura para cualquier activo subyacente, siempre tomando en cuenta las necesidades del cliente</span>
-                            </div>
-                            <div class="col wow fadeInRight">
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Determinación del Credit Value Adjustment (“CVA”) y Return on Assets (“RAR”), para cualquier estrategia de cobertura</span>
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Obtención de líneas de financiamiento para operar derivados con cualquier institución financiera establecida en México</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 services pt-4">
-                        <h4 class="darkcolor py-4 text-center wow fadeInLeft">BANCA DE <span style="color: #ff9c07">INVERSIÓN M&A</span></h4>
-                        <div class="row">
-                            <div class="col wow fadeInLeft">
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Análisis de las alternativas de financiamiento público, privado, bancario, bursátil, mezzanine o capital</span>
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Diseño, estructuración, calificación, implementación, autorización y fondeo del financiamiento específico</span>
-                                <span id="asesoria" class="sub-heading-text"><span class="pr-2 li">►</span>Calificación de financiamientos aplica fundamentalmente para financiamientos púbicos vía el mercado de valores</span>
-                            </div>
-                            <div class="col wow fadeInRight">
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Obtención de aprobaciones por parte de los reguladores</span>
-                                <span class="sub-heading-text"><span class="pr-2 li">►</span>Obtención de las aprobaciones necesarias por parte de los comités de crédito y/o riesgos por parte de los inversionistas para un exitoso fondeo de los financiamientos</span>
+                    @foreach ($services as $service)
+                        <div class="col-12 services pt-4" >
+                            <h4 class="darkcolor py-4 text-center wow fadeInLeft">{{ $service->h4 }} <span style="color: #ff9c07">{{ $service->span }}</span></h4>
+                            <div class="row">
+                                <div class="col wow fadeInLeft">
+                                    <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service1 }}</span>
+                                    <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service2 }}</span>
+                                    <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service3 }}</span>
+                                </div>
+                                <div class="col wow fadeInRight">
+                                    <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service4 }}</span>
+                                    <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service5 }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                     <div class="col-12 services pt-4">
                         <h4 class="darkcolor py-4 wow fadeInLeft text-center"><span style="color: #ff9c07">ASESORAMIENTO</span> EN</h4>
                         <div class="row text-center">

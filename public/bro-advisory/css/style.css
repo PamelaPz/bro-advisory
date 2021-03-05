@@ -570,9 +570,10 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     display: block;
     text-align: center;
     transform: translateY(-3px);
+    margin: 0;
 }
 .header-appear .fixed-nav-logo img{
-    width: 60%;
+    width: 90%;
 }
 .header-appear .main-navigation .simple-navbar{
     display: flex;
