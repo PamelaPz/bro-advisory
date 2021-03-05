@@ -7,9 +7,9 @@
     <!-- Author -->
     <meta name="author" content="Themes Industry">
     <!-- description -->
-    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+    <meta name="description" content="Broad firma de asesoría financiera y legal a empresas">
     <!-- keywords -->
-    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+    <meta name="keywords" content="Broad firma de asesoría financiera y legal a empresas">
     <!-- Page Title -->
     <title>BRO ADVISORY </title>
     <!-- Favicon -->
@@ -75,7 +75,7 @@
             </div>
             <div class="color-line-overlay"></div>
         </div>
-        
+
         <!--main nav-->
         <div class="main-navigation">
             <div class="container">
@@ -188,6 +188,7 @@
                         <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
                         <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>
                         <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="{{ route('login') }}" class="wow fadeInDown pinterest"><i class="fas fa-sign-in-alt"></i> </a> </li>
                     </ul>
                 </div>
             </div>

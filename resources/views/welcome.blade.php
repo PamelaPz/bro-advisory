@@ -9,44 +9,24 @@
         <div class="inner-bg-overlay"></div>
         <div class="row">
             <div class="slider-detail col-12 col-lg-6 text-center text-lg-left wow fadeInLeft" data-wow-delay=".8s">
-                <div class="slider-slide">
-                    <div class="slider-inner-content">
-                        <h4 class="slide-heading text-uppercase">En <span> BroAD </span></h4>
-                        <p class="slide-text">Tenemos un amplio conocimiento de los elementos fiscales, regulatorios y de mercados, así como estrechas relaciones con autoridades y ejecutivos clave dentro de los diversos participantes en el mercado de valores.</p>
-                        <a href="#about-sec" class="btn anim-btn rounded-pill scroll">LEER MÁS
-                            <span></span><span></span><span></span><span></span>
-                        </a>
+                @foreach ($banners as $banner)
+                    <div class="slider-slide">
+                        <div class="slider-inner-content">
+                            <h4 class="slide-heading text-uppercase">{{ $banner->title }}</h4>
+                            <p class="slide-text">{{ $banner->subtitle }}</p>
+                            <a href="#about-sec" class="btn anim-btn rounded-pill scroll">LEER MÁS
+                                <span></span><span></span><span></span><span></span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-slide">
-                    <div class="slider-inner-content">
-                        <h4 class="slide-heading text-uppercase">Los profesionistas<span> </span></h4>
-                        <p class="slide-text">De BROAD tenemos una amplia y reconocida experiencia evaluando, estructurando, desarrollando e implementando productos financieros innovadores que cumplen con los requerimientos de inversión de nuestros clientes</p>
-                        <a href="#about-sec" class="btn anim-btn rounded-pill scroll">LEER MÁS
-                            <span></span><span></span><span></span><span></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="slider-slide">
-                    <div class="slider-inner-content">
-                        <h4 class="slide-heading text-uppercase">Ya <span>sea como </span></h4>
-                        <p class="slide-text">BROAD o en lo individual, nuestro equipo ha participado en la estructuración de por lo menos 40 transacciones de banca de inversión y poco más de 100 en las que se han diseñado diversos productos de tesorería, también conocidos como estrategias de cobertura con derivados.</p>
-                        <a href="#about-sec" class="btn anim-btn rounded-pill scroll">LEER MÁS
-                            <span></span><span></span><span></span><span></span>
-                        </a> 
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="slider-img col-12 col-lg-6 wow fadeInRight" data-wow-delay=".8s" data-depth="0.1">
-                <div class="img-slide">
-                    <img src="{{ asset('bro-advisory/img/example10.jfif') }}">
-                </div>
-                <div class="img-slide">
-                    <img src="{{ asset('bro-advisory/img/example8.jpg') }}">
-                </div>
-                <div class="img-slide">
-                    <img src="{{ asset('bro-advisory/img/example3.jpg') }}">
-                </div>
+                @foreach ($banners as $banner)
+                    <div class="img-slide">
+                        <img src="{{ asset('storage/'.$banner->banner) }}">
+                    </div>
+                @endforeach
             </div>
         </div>
         <div class="slider-arrows">
@@ -482,7 +462,7 @@
                     <div class="item">
                         <div class="content-img">
                             <img class="img_gray" src="{{ asset('bro-advisory/img/tv_azteca.png') }}">
-                        </div> 
+                        </div>
                         </div>
                     </div>
                 </div>

@@ -19,6 +19,8 @@ Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::resource('banners', 'App\Http\Controllers\BannersController');
+
 	Route::get('table-list', function () {
 		return view('pages.table_list');
 	})->name('table');
@@ -42,10 +44,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('rtl-support', function () {
 		return view('pages.language');
 	})->name('language');
-
-	Route::get('upgrade', function () {
-		return view('pages.upgrade');
-	})->name('upgrade');
 });
 
 Route::group(['middleware' => 'auth'], function () {

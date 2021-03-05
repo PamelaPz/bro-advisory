@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Banner;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -13,7 +14,9 @@ class LandingController extends Controller
      */
     public function welcome()
     {
-        return view('welcome');
+        $banners = Banner::all();
+
+        return view('welcome', compact('banners'));
     }
 
     public function dashboard()
