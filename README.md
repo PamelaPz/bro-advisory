@@ -5,6 +5,7 @@
 - Se deshabilitó el registro de usuarios y el recordar password
 - Se modificó el menú lateral para mostrar solo secciones terminadas
 - Se modifico el footer de invitado
+- Crud de sección de banners completamente terminado
 
 ## Pendientes
 - Modificar el footer del usuario autenticado
