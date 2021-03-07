@@ -1291,6 +1291,9 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .team-sec .item:hover .team-box .overlay{
     opacity: 1;
 }
+.item .team-box .img-holder img {
+    height: 15rem !important;
+}
 .team-box .team-social li {
     opacity: 0;
     visibility: hidden;

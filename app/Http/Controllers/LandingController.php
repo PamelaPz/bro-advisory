@@ -7,6 +7,7 @@ use App\Models\About;
 use App\Models\Services;
 use App\Models\Advisory;
 use App\Models\Contact;
+use App\Models\Clients;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -23,8 +24,9 @@ class LandingController extends Controller
         $services = Services::all();
         $advisories = Advisory::all();
         $contact = Contact::find(1);
-        
-        return view('welcome', compact('banners', 'about', 'services', 'advisories', 'contact'));
+        $clients = Clients::all();
+
+        return view('welcome', compact('banners', 'about', 'services', 'advisories', 'contact', 'clients'));
     }
 
     public function dashboard()

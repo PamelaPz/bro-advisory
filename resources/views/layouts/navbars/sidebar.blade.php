@@ -53,20 +53,20 @@
           </ul>
         </div>
       </li>
-
-      
+      <li class="nav-item{{ $activePage == 'clientes' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('clientes.index') }}">
+          <i class="material-icons">library_books</i>
+            <p>{{ __('Clientes') }}</p>
+        </a>
+      </li>
       <li class="nav-item{{ $activePage == 'contacto' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('contacto.edit', 1) }}">
           <i class="material-icons">near_me</i>
           <p>{{ __('Contacto') }}</p>
         </a>
       </li>
-      {{-- <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('typography') }}">
-          <i class="material-icons">library_books</i>
-            <p>{{ __('Typography') }}</p>
-        </a>
-      </li> --}}
+
+      
       {{-- <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('notifications') }}">
           <i class="material-icons">notifications</i>

@@ -52,5 +52,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('servicios', 'App\Http\Controllers\ServicesController');
 	Route::resource('asesoria', 'App\Http\Controllers\AdvisoryController');
 	Route::resource('contacto', 'App\Http\Controllers\ContactController');
+	Route::resource('clientes', 'App\Http\Controllers\ClientsController');
 });
 

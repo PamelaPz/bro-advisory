@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     @endforeach
-                    <div class="col-12 services pt-4">
+                    <div class="col-12 services pt-4" id="asesoria">
                         <h4 class="darkcolor py-4 wow fadeInLeft text-center"><span style="color: #ff9c07">ASESORAMIENTO</span> EN</h4>
                         <div class="row text-center">
                             @foreach ( $advisories as $advisory )                 
@@ -179,7 +179,7 @@
                         <div class="item text-center">
                             <div class="team-box">
                                 <div class="img-holder position-relative">
-                                    <img src="{{ asset('bro-advisory/img/example11.jpg') }}">
+                                    <img src="{{ asset('bro-advisory/img/team1.jpg') }}">
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
@@ -199,7 +199,7 @@
                         <div class="item text-center">
                             <div class="team-box">
                                 <div class="img-holder position-relative">
-                                    <img src="{{ asset('bro-advisory/img/example11.jpg') }}">
+                                    <img src="{{ asset('bro-advisory/img/team4.jpg') }}">
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
@@ -219,7 +219,7 @@
                         <div class="item text-center">
                             <div class="team-box">
                                 <div class="img-holder position-relative">
-                                    <img src="{{ asset('bro-advisory/img/example11.jpg') }}">
+                                    <img src="{{ asset('bro-advisory/img/team3.jpg') }}">
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
@@ -390,187 +390,53 @@
 <div class="sponser-sec padding-top" id="asesor-financiero">
     <div class="container">
         <div class="row text-center">
-            <div class="col-12 py-4 wow fadeInRight text-center" >
-                <h4 class="heading-title pb-3">Productos de <span class="text-yellow">tesorería</span> en los que hemos <span class="text-blue">participado</span> y <span class="text-blue">cerrado</span></h4>
-                <div class="sponser-tags owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/bimbo.png') }}">
+            @foreach ($clients as $client)
+                <div class="col-12 py-4 wow fadeInRight text-center" >
+                    <h4 class="heading-title pb-3">{{$client->h4}} <span class="text-yellow">{{ $client->span }}</span> {{ $client->h4_2}}</h4>
+                    <div class="sponser-tags owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client1) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/mexichem.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client2) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/alsea.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client3) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/palacio_de_hierro.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client4) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/gerdau.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client5) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/jugos_del_valle.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client6) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/tmm.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client7) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/tv_azteca.png') }}">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 py-4 wow fadeInLeft text-center" >
-            <h4 class="heading-title pb-3">Productos de <span class="text-yellow">tesorería</span> en los que hemos <span class="text-blue">valuado</span> y <span class="text-blue">cerrado</span></h4>
-                <div class="sponser-tags owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/bachoco.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/fibra_hd.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/financiera_atlas.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/la_vasconia.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/elementia.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/idesa.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/totalplay.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/fibra_hd.png') }}">
+                        <div class="item">
+                            <div class="content-img">
+                                <img class="img_gray" src="{{ asset('storage/'.$client->client8) }}">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 py-4 wow fadeInRight text-center">
-            <h4 class="heading-title pb-3">Banca de <span class="text-yellow">inversión</span> en los que hemos <span class="text-blue">estructurado</span> y <span class="text-blue">vendido</span></h4>
-                <div class="sponser-tags owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/grupo_iamsa.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/cas.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/canal_5.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/tmm.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/promotora_fresnillo.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/grupo_herradura_occidente.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/tuca.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/tv_azteca.png') }}">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 py-4 wow fadeInLeft text-center">
-            <h4 class="heading-title pb-3">Asesor <span class="text-yellow">financiero</span> líder en la <span class="text-blue">infraestructura</span> de <span class="text-blue">financiamientos bursátiles</span></h4>
-                <div class="sponser-tags owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/pinfra.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/dinero_express.svg') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/instituto_de_control_vehicular.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/fonacot.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/docsolutions.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/grupo_jap.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/ssl_digital.png') }}">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-img">
-                            <img class="img_gray" src="{{ asset('bro-advisory/img/orsan.png') }}">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
