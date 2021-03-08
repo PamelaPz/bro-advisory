@@ -23,13 +23,13 @@
                                         @foreach ($services as $service)
                                             <tr>
                                                 <td width="20%">
-                                                    <a href="">
+                                                    <a href="{{ route('servicios.show', $service->id) }}">
                                                         <b>{{ $service->h4 }}</b><br>
                                                         {{ $service->span }}
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{ route('servicios.show', $service->id) }}">
                                                         <b>{{ $service->service1 }}</b><br>
                                                         {{ $service->service2 }}<br>
                                                         ...

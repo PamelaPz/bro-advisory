@@ -48,7 +48,9 @@ class ServicesController extends Controller
      */
     public function show($id)
     {
-        //
+        $services = Services::find($id);
+
+        return view('servicios.show', compact('services'));
     }
 
     /**
@@ -73,7 +75,11 @@ class ServicesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $services = Services::FindOrFail($id);
+
+        $services->update($request->all());
+
+        return redirect()->route('servicios.show', compact('services'));
     }
 
     /**

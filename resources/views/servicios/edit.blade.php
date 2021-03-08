@@ -8,41 +8,41 @@
                     <h4 class="card-title">Editar Acerca de</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('servicios.edit', $services->id) }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('servicios.update', $services->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
-                        {{--@method('put')--}}
+                        @method('put')
                         <br>
                         <div class="row mx-1">
                           <div class="form-group col-6">
-                              <label for="title" style="left: 15px;">Título</label>
-                              <input name="title" type="text" class="form-control" id="title" value="{{ $services->h4 }}" required>
+                              <label for="h4" style="left: 15px;">Título</label>
+                              <input name="h4" type="text" class="form-control" id="h4" value="{{ $services->h4 }}" required>
                           </div>
                           <div class="form-group col-6">
-                              <label for="title" style="left: 15px;">Título en amarillo</label>
-                              <input name="title" type="text" class="form-control" id="title" value="{{ $services->span }}">
+                              <label for="span" style="left: 15px;">Título en amarillo</label>
+                              <input name="span" type="text" class="form-control" id="span" value="{{ $services->span }}">
                           </div>
                         </div>
                         <br>
                         <div class="form-group mx-3">
-                            <label for="subtitle" >Servicio 1</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="2" required>{{ $services->service1 }}</textarea>
+                            <label for="service1" >Servicio 1</label>
+                            <textarea name="service1" class="form-control" id="service1" rows="2" required>{{ $services->service1 }}</textarea>
                         </div>
                         <br>
                         <div class="form-group mx-3">
-                            <label for="subtitle">Servicio 2</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="2" required>{{ $services->service2 }}</textarea>
+                            <label for="service2">Servicio 2</label>
+                            <textarea name="service2" class="form-control" id="service2" rows="2" required>{{ $services->service2 }}</textarea>
                         </div>
                         <div class="form-group mx-3">
-                            <label for="subtitle">Servicio 3</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="2" required>{{ $services->service3 }}</textarea>
+                            <label for="service3">Servicio 3</label>
+                            <textarea name="service3" class="form-control" id="service3" rows="2" required>{{ $services->service3 }}</textarea>
                         </div>
                         <div class="form-group mx-3">
-                            <label for="subtitle">Servicio 4</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="2" required>{{ $services->service4 }}</textarea>
+                            <label for="service4">Servicio 4</label>
+                            <textarea name="service4" class="form-control" id="service4" rows="2" required>{{ $services->service4 }}</textarea>
                         </div>
                         <div class="form-group mx-3">
-                            <label for="subtitle">Servicio 5</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="2" required>{{ $services->service5 }}</textarea>
+                            <label for="service5">Servicio 5</label>
+                            <textarea name="service5" class="form-control" id="service5" rows="2" required>{{ $services->service5 }}</textarea>
                         </div>
                         <br>
                         {{--<div class="fileinput fileinput-new text-center" data-provides="fileinput">
