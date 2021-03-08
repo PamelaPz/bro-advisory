@@ -47,7 +47,7 @@
 ====================================== */
 :root {
     --color-orange: #ff9c07;
-    --color-blueDark: #032a58;
+    --color-blueDark: #22A1DB;
     --color-blackGrey: #202020;
     --color-white: #ffffff;
     --color-gray: #8799a3;
@@ -1281,7 +1281,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     left: 5%;
     right: 5%;
     bottom: 5%;
-    background: rgba(3, 42, 88, 0.6);
+    background: rgba(34, 161, 219, .6);
     opacity: 0;
     transition: .8s ease;
 }
