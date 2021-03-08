@@ -13,10 +13,9 @@
 - En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección Clientes tiene funcionando/habilitada la actualización de textos y solo una primera imagen.
 - La sección Contacto se modificaron sus vistas a: mostrar datos > editar y guardar.
-- La sección Contacto tiene funcionando/habilitado la actualización de datos.
 
 ## Pendientes
-- (Ayuda!) Sección de Servicios > Tesorería, Inversión y Asesoria manda un error de no encontrar la ruta pero actualiza los nuevos datos ingresados.
+- (Ayuda!) Sección de Servicios (Tesorería, Inversión, Asesoria) y Contacto manda un error de no encontrar la ruta pero actualiza los nuevos datos ingresados.
 - (Ayuda!) Sección de Servicios > Asesoria no puedo guardar cambios de radio button.
 - (Ayuda!) en la Sección Clientes no puedo actualizar todas las imagenes.
 
