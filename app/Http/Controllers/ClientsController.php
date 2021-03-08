@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Clients;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ClientsController extends Controller
 {
@@ -74,7 +75,25 @@ class ClientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $clients = Clients::FindOrFail($id);
+
+        if( $request->hasFile('img1') ){
+            $img1 = $request->file('img1');
+            $name = str_replace(' ','-', $img1->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $img1, $name );
+            $clients::whereId($id)->update([
+                'h4' => $request->h4,
+                'span' => $request->span,
+                'h4_2' => $request->h4_2,
+                'client1' => $path,
+            ]);
+        }
+        else{
+            $clients->update($request->all());
+        }
+
+        return redirect()->route('clientes.index', compact('clients'));
     }
 
     /**
