@@ -49,7 +49,7 @@
                         <a href="{{ route('clientes.edit', $client->id ) }}" type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
                           <i class="material-icons">edit</i>
                         </a>
-                        <form action="{{ route('clientes.edit', $client->id) }}" method="POST">
+                        <form action="{{ route('clientes.destroy', $client->id) }}" method="POST">
                           @csrf
                           @method('DELETE')
                             <button type="submit" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">

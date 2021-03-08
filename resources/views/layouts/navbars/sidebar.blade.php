@@ -24,7 +24,7 @@
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'about' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('about.edit', 1) }}">
+        <a class="nav-link" href="{{ route('about.show', 1) }}">
           <i class="material-icons">book</i>
             <p>{{ __('Acerca de') }}</p>
         </a>
@@ -60,7 +60,7 @@
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'contacto' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('contacto.edit', 1) }}">
+        <a class="nav-link" href="{{ route('contacto.show', 1) }}">
           <i class="material-icons">near_me</i>
           <p>{{ __('Contacto') }}</p>
         </a>

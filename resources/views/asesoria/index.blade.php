@@ -39,7 +39,7 @@
                                                         <i class="material-icons">edit</i>
                                                     </a>
 
-                                                    <form action="" method="POST">
+                                                    <form action="{{ route('asesoria.destroy', $advisory->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                         <button type="submit" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">

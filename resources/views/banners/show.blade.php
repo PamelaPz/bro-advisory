@@ -11,7 +11,7 @@
                     <div class="col-12 text-right">
                         <a href="{{ route('banners.edit', $banner->id) }}" class="btn btn-sm btn-primary">Editar</a>
                     </div>
-                    <br><br>
+                    <br>
                     <div class="form-group">
                         <label for="title">Título</label>
                         <input name="title" type="text" class="form-control" id="title" value="{{ $banner->title }}" disabled>

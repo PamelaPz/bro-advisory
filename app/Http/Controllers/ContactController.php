@@ -46,7 +46,9 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        //
+        $contact = Contact::find($id);
+
+        return view('contacto.show', compact('contact'));
     }
 
     /**
@@ -71,7 +73,11 @@ class ContactController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contact = Contact::FindOrFail($id);
+
+        $contact->update($request->all());
+
+        return redirect()->route('contacto.show', compact('contact'));
     }
 
     /**

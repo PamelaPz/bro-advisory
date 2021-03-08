@@ -85,6 +85,8 @@ class AdvisoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $advisory = Advisory::find($id)->delete();
+
+        return back();
     }
 }

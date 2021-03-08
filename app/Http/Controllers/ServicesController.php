@@ -84,6 +84,8 @@ class ServicesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $service = Services::find($id)->delete();
+
+        return back();
     }
 }

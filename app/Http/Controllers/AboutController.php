@@ -46,7 +46,9 @@ class AboutController extends Controller
      */
     public function show($id)
     {
-        //
+        $about = About::find($id);
+
+        return view('about.show', compact('about'));
     }
 
     /**
@@ -71,7 +73,11 @@ class AboutController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $about = About::FindOrFail($id);
+
+        $about->update($request->all());
+
+        return redirect()->route('about.show', compact('about'));
     }
 
     /**
