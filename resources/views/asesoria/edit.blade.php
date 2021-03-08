@@ -8,13 +8,13 @@
                     <h4 class="card-title">Editar Asesoria</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('about.edit', 1) }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('asesoria.update', $advisory->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
-                        {{--@method('put')--}}
+                        @method('put')
                         <br>
                         <div class="form-group mx-3">
-                            <label for="title" >Título</label>
-                            <input name="title" type="text" class="form-control" id="title" value="{{ $advisory->subh4 }}" required>
+                            <label for="subh4" >Título</label>
+                            <input name="subh4" type="text" class="form-control" id="subh4" value="{{ $advisory->subh4 }}" required>
                         </div>
                         <br>
                         <div class="form-group mx-3">
@@ -26,7 +26,7 @@
                                     <td>
                                       <div class="form-check">
                                         <label class="form-check-label">
-                                          <input class="form-check-input" type="checkbox" value="" {{ $advisor->icon === $advisory->icon ? 'checked': ''}}>
+                                          <input class="form-check-input" type="radio" name="icon" value="" {{ $advisor->icon === $advisory->icon ? 'checked': ''}}>
                                           <span class="form-check-sign">
                                             <span class="check"></span>
                                           </span>
@@ -41,8 +41,8 @@
                         </div>
                         <br>
                         <div class="form-group mx-3">
-                            <label for="subtitle">Párrafo</label>
-                            <textarea name="subtitle" class="form-control" id="subtitle" rows="3" required>{{ $advisory->p1 }}</textarea>
+                            <label for="p1">Párrafo</label>
+                            <textarea name="p1" class="form-control" id="p1" rows="3" required>{{ $advisory->p1 }}</textarea>
                         </div>
                         <br>
                         {{--<div class="fileinput fileinput-new text-center" data-provides="fileinput">

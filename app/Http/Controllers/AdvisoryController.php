@@ -48,7 +48,10 @@ class AdvisoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $advisory = Advisory::find($id);
+        // $advisories = Advisory::all();
+
+        return view('asesoria.show', compact('advisory'));
     }
 
     /**
@@ -74,7 +77,20 @@ class AdvisoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $advisory = Advisory::FindOrFail($id);
+
+        if( $request ){
+            $icon = $request->input('icon');
+            $advisory::whereId($id)->update([
+                'subh4' => $request->subh4,
+                'p1' => $request->p1,
+            ]);
+        }
+        else{
+            $advisory->update($request->all());
+        }
+
+        return redirect()->route('asesoria.show', compact('advisory'));
     }
 
     /**

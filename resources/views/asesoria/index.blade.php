@@ -23,14 +23,14 @@
                                         @foreach ($advisories as $advisory)
                                             <tr>
                                                 <td width="20%" style="text-align: center;">
-                                                    <a href="">
-                                                    <i class="lni {{ $advisory->icon }}" style="font-size: 3rem"></i>
-                                                    <br>
+                                                    <a href="{{ route('asesoria.show', $advisory->id) }}">
+                                                        <i class="lni {{ $advisory->icon }}" style="font-size: 3rem"></i>
+                                                        <br>
                                                         <b>{{ $advisory->subh4 }}</b>
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{ route('asesoria.show', $advisory->id) }}">
                                                         <b>{{ $advisory->p1 }}</b>
                                                     </a>
                                                 </td>
