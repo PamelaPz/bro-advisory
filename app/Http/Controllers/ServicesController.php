@@ -48,9 +48,9 @@ class ServicesController extends Controller
      */
     public function show($id)
     {
-        $services = Services::find($id);
+        $servicio = Services::find($id);
 
-        return view('servicios.show', compact('services'));
+        return view('servicios.show', compact('servicio'));
     }
 
     /**
@@ -75,11 +75,11 @@ class ServicesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $services = Services::FindOrFail($id);
+        $servicio = Services::FindOrFail($id);
 
-        $services->update($request->all());
+        $servicio->update($request->all());
 
-        return redirect()->route('servicios.show', compact('services'));
+        return redirect()->route('servicios.show', compact('servicio'));
     }
 
     /**

@@ -8,6 +8,9 @@
                     <h4 class="card-title">Editar Acerca de</h4>
                 </div>
                 <div class="card-body">
+                    <div class="col-12 text-right">
+                        <a href="{{ route('servicios.show', $services->id) }}" class="btn btn-sm btn-primary">Regresar</a>
+                    </div>
                     <form action="{{ route('servicios.update', $services->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('put')
