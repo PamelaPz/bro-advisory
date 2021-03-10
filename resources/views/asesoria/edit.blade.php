@@ -8,6 +8,9 @@
                     <h4 class="card-title">Editar Asesoria</h4>
                 </div>
                 <div class="card-body">
+                    <div class="col-12 text-right">
+                        <a href="{{ route('asesoria.show', $advisory->id) }}" class="btn btn-sm btn-primary">Regresar</a>
+                    </div>
                     <form action="{{ route('asesoria.update', $advisory->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('put')
@@ -26,7 +29,8 @@
                                     <td>
                                       <div class="form-check">
                                         <label class="form-check-label">
-                                          <input class="form-check-input" type="radio" name="icon" value="" {{ $advisor->icon === $advisory->icon ? 'checked': ''}}>
+                                          <!-- Crear tabla con iconos y su estatus de activo -->
+                                          <input class="form-check-input" type="radio" name="icon" value="{{$advisor->icon}}" {{ $advisor->icon === $advisory->icon ? 'checked': ''}}>
                                           <span class="form-check-sign">
                                             <span class="check"></span>
                                           </span>

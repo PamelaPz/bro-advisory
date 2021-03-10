@@ -5,26 +5,26 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header card-header-primary">
-                    <h4 class="card-title">Ver Texto # {{$advisory->id}}</h4>
+                    <h4 class="card-title">Ver Texto # {{$asesorium->id}}</h4>
                 </div>
                 <div class="card-body">
                     <div class="col-12 text-right">
-                        <a href="{{ route('asesoria.edit', $advisory->id) }}" class="btn btn-sm btn-primary">Editar</a>
+                        <a href="{{ route('asesoria.edit', $asesorium->id) }}" class="btn btn-sm btn-primary">Editar</a>
                     </div>
                     <br>
                     <div class="form-group mx-3">
                         <label for="title" >Título</label>
-                        <input name="title" type="text" class="form-control" id="title" value="{{ $advisory->subh4 }}" disabled>
+                        <input name="title" type="text" class="form-control" id="title" value="{{ $asesorium->subh4 }}" disabled>
                     </div>
                     <br>
                     <div class="form-group mx-3">
                         <label for="title" >Icono</label><br>
-                        <i class="lni {{ $advisory->icon }}" style="font-size: 3rem"></i>
+                        <i class="lni {{ $asesorium->icon }}" style="font-size: 3rem"></i>
                     </div>
                     <br>
                     <div class="form-group mx-3">
                         <label for="subtitle">Párrafo</label>
-                        <textarea name="subtitle" class="form-control" id="subtitle" rows="3" disabled>{{ $advisory->p1 }}</textarea>
+                        <textarea name="subtitle" class="form-control" id="subtitle" rows="3" disabled>{{ $asesorium->p1 }}</textarea>
                     </div>
                     <br>
                     <div class="form-group">
