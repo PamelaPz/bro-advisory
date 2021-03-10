@@ -6,18 +6,19 @@
 - Se modificó el menú lateral para mostrar solo secciones terminadas
 - Se modifico el footer de invitado
 - Crud de sección de banners completamente terminado
+
 ## Historial de cambios por Pamela
 - Todas secciones tienen funcionando/habilitado el botón de eliminar
 - La sección About se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección About tiene funcionando/habilitado la actualización de datos.
-- En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar.
+- En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar, 
+  estas mismas secciones ya actualizan textos.
 - La sección Clientes tiene funcionando/habilitada la actualización de textos y solo una primera imagen.
 - La sección Contacto se modificaron sus vistas a: mostrar datos > editar y guardar.
 
 ## Pendientes
-- (Ayuda!) Sección de Servicios (Tesorería, Inversión, Asesoria) y Contacto manda un error de no encontrar la ruta pero actualiza los nuevos datos ingresados.
-- (Ayuda!) Sección de Servicios > Asesoria no puedo guardar cambios de radio button.
-- (Ayuda!) en la Sección Clientes no puedo actualizar todas las imagenes.
+- (Ayuda!) Crear tabla de iconos y su estatus de activo y relacionarla con la tabla servicios/asesoria
+- (Ayuda!) Crear tabla de imagenes y relacionarla a la tabla clientes.
 
 ## Actualizar
 Para mantener el proyecto en la última versión:
