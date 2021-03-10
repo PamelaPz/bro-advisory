@@ -8,7 +8,10 @@
                     <h4 class="card-title">Editar Contacto</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('contacto.update', 1) }}" method="post" enctype="multipart/form-data">
+                    <div class="col-12 text-right">
+                        <a href="{{ route('contacto.show', $contact->id) }}" class="btn btn-sm btn-primary">Regresar</a>
+                    </div>
+                    <form action="{{ route('contacto.update',1) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('put')
                         <br>
