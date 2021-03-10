@@ -23,8 +23,8 @@ class LandingController extends Controller
         $about = About::find(1);
         $services = Services::all();
         $advisories = Advisory::all();
-        $contact = Contact::find(1);
         $clients = Clients::all();
+        $contact = Contact::find(1);
 
         return view('welcome', compact('banners', 'about', 'services', 'advisories', 'contact', 'clients'));
     }
