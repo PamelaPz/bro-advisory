@@ -12,6 +12,7 @@
 - La sección About se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección About tiene funcionando/habilitado la actualización de datos.
 - En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar.
+- La sección Servicios tiene funcionando la actualización de datos.
 - La sección Clientes tiene funcionando/habilitada la actualización de textos y solo una primera imagen.
 - La sección Contacto se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección Contacto tiene funcionando la actualización de datos.
