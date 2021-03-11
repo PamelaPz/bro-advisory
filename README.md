@@ -11,13 +11,12 @@
 - Todas secciones tienen funcionando/habilitado el botón de eliminar
 - La sección About se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección About tiene funcionando/habilitado la actualización de datos.
-- En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar, 
-  estas mismas secciones ya actualizan textos.
+- En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección Clientes tiene funcionando/habilitada la actualización de textos y solo una primera imagen.
 - La sección Contacto se modificaron sus vistas a: mostrar datos > editar y guardar.
+- Sección asesoria funcionando la actualización de datos e iconos.
 
 ## Pendientes
-- (Ayuda!) Crear tabla de iconos y su estatus de activo y relacionarla con la tabla servicios/asesoria
 - (Ayuda!) Crear tabla de imagenes y relacionarla a la tabla clientes.
 
 ## Actualizar
