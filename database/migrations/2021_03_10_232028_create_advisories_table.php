@@ -14,11 +14,14 @@ class CreateAdvisoriesTable extends Migration
     public function up()
     {
         Schema::create('advisories', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
 
-            $table->text('icon');
             $table->text('subh4');
             $table->text('p1');
+            $table->integer('icon_id')->unsigned();
+
+            $table->foreign('icon_id')->references('id')->on('icons')
+                ->onUpdate('cascade')->onDelete('cascade');
 
             $table->timestamps();
         });

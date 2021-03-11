@@ -19,7 +19,11 @@
                     <br>
                     <div class="form-group mx-3">
                         <label for="title" >Icono</label><br>
-                        <i class="lni {{ $asesorium->icon }}" style="font-size: 3rem"></i>
+                        @foreach ($icons as $icono)
+                            @if ($asesorium->icon_id == $icono->id)
+                                <i class="lni {{ $icono->icon }}" style="font-size: 3rem"></i>
+                            @endif
+                        @endforeach
                     </div>
                     <br>
                     <div class="form-group mx-3">

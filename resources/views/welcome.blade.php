@@ -135,13 +135,17 @@
                                 <div class="col-12 col-lg-6 card-icons pb-3">
                                     <div class="service-card wow fadeInLeft">
                                         <div class="icon-holder">
-                                            <i class="lni {{ $advisory->icon }}"></i>
+                                            @foreach ($icons as $icono)
+                                                @if ($advisory->icon_id == $icono->id)
+                                                    <i class="lni {{ $icono->icon }}"></i>
+                                                @endif
+                                            @endforeach
                                         </div>
                                     <h4 class="card-heading pb-3 wow fadeInRight">{{ $advisory->subh4 }}</h4>
                                     <p class="text-dark text-left sub-heading-text wow fadeInLeft">{{ $advisory->p1 }}</p>
                                     </div>
                                 </div>
-                            @endforeach                     
+                            @endforeach
                             {{--<div class="col-12 col-lg-6 wow fadeInRight card-icons pb-3">
                                 <div class="service-card">
                                     <div class="icon-holder">

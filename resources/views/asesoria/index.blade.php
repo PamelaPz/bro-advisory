@@ -24,7 +24,11 @@
                                             <tr>
                                                 <td width="20%" style="text-align: center;">
                                                     <a href="{{ route('asesoria.show', $advisory->id) }}">
-                                                        <i class="lni {{ $advisory->icon }}" style="font-size: 3rem"></i>
+                                                        @foreach ($icons as $icono)
+                                                            @if ($advisory->icon_id == $icono->id)
+                                                                <i class="lni {{ $icono->icon }}" style="font-size: 3rem"></i>
+                                                            @endif
+                                                        @endforeach
                                                         <br>
                                                         <b>{{ $advisory->subh4 }}</b>
                                                     </a>

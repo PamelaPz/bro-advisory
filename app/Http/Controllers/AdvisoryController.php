@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Icons;
 use App\Models\Advisory;
 use Illuminate\Http\Request;
 
@@ -15,8 +16,9 @@ class AdvisoryController extends Controller
     public function index()
     {
         $advisories = Advisory::all();
+        $icons = Icons::all();
 
-        return view('asesoria.index', compact('advisories'));
+        return view('asesoria.index', compact('advisories', 'icons'));
     }
 
     /**
@@ -49,8 +51,9 @@ class AdvisoryController extends Controller
     public function show($id)
     {
         $asesorium = Advisory::find($id);
+        $icons = Icons::all();
 
-        return view('asesoria.show', compact('asesorium'));
+        return view('asesoria.show', compact('asesorium', 'icons'));
     }
 
     /**
@@ -63,8 +66,10 @@ class AdvisoryController extends Controller
     {
         $advisory = Advisory::find($id);
         $advisories = Advisory::all();
+        $icon = Icons::find($id);
+        $icons = Icons::all();
 
-        return view('asesoria.edit', compact('advisory', 'advisories'));
+        return view('asesoria.edit', compact('advisory', 'advisories', 'icons', 'icon'));
     }
 
     /**
@@ -79,10 +84,10 @@ class AdvisoryController extends Controller
         $asesorium = Advisory::FindOrFail($id);
 
         if( $request ){
-            // $icon = $request['icon'];
+            // dd($request->icons);
             $asesorium::whereId($id)->update([
                 'subh4' => $request->subh4,
-                'icon' => $request->icon,
+                'icon_id' => $request->icons,
                 'p1' => $request->p1,
             ]);
         }

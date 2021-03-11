@@ -25,19 +25,20 @@
                             <table class="table">
                               <tbody>
                                 <tr>
-                                  @foreach ($advisories as $advisor)
+                                  @foreach ($icons as $icono)
                                     <td>
                                       <div class="form-check">
                                         <label class="form-check-label">
-                                          <!-- Crear tabla con iconos y su estatus de activo -->
-                                          <input class="form-check-input" type="radio" name="icon" value="{{$advisor->icon}}" {{ $advisor->icon === $advisory->icon ? 'checked': ''}}>
+                                          <input class="form-check-input" type="radio" name="icons" id="icons" value="{{$icono->id}}" {{ $advisory->icon_id === $icono->id ? 'checked': ''}}>
                                           <span class="form-check-sign">
                                             <span class="check"></span>
                                           </span>
                                         </label>
                                       </div>
                                     </td>
-                                    <td><i class="lni {{ $advisor->icon }}" style="font-size: 3rem"></i></td>
+                                    <td>
+                                        <i class="lni {{ $icono->icon }}" style="font-size: 3rem"></i>
+                                    </td>
                                   @endforeach
                                 </tr>
                               </tbody>
