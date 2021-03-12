@@ -13,13 +13,13 @@
 - La sección About tiene funcionando/habilitado la actualización de datos.
 - En la sección de Servicios > Tesorería, Inversión y Asesoria se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección Servicios tiene funcionando la actualización de datos.
-- La sección Clientes tiene funcionando/habilitada la actualización de textos y solo una primera imagen.
 - La sección Contacto se modificaron sus vistas a: mostrar datos > editar y guardar.
 - La sección Contacto tiene funcionando la actualización de datos.
 - Sección asesoria funcionando la actualización de datos e iconos.
+- Sección de Clientes tiene funcionando la actualización de textos e imagenes
 
 ## Pendientes
-- (Ayuda!) Crear tabla de imagenes y relacionarla a la tabla clientes.
+-
 
 ## Actualizar
 Para mantener el proyecto en la última versión:
