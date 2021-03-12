@@ -398,46 +398,15 @@
                 <div class="col-12 py-4 wow fadeInRight text-center" >
                     <h4 class="heading-title pb-3">{{$client->h4}} <span class="text-yellow">{{ $client->span }}</span> {{ $client->h4_2}}</h4>
                     <div class="sponser-tags owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client1) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client2) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client3) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client4) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client5) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client6) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client7) }}">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content-img">
-                                <img class="img_gray" src="{{ asset('storage/'.$client->client8) }}">
-                            </div>
-                        </div>
+                        @foreach ($clientimgs as $img)
+                            @if($client->category_id == $img->category_id)  
+                                <div class="item">
+                                    <div class="content-img">
+                                        <img class="img_gray" src="{{ asset('storage/'.$img->img_cliente) }}">
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
             @endforeach
