@@ -7,7 +7,7 @@ use App\Models\Imgclients;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class ClientsController extends Controller
+class ImgclientsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +16,7 @@ class ClientsController extends Controller
      */
     public function index()
     {
-        $clients = Clients::all();
-        $clientimgs = Imgclients::all();
-
-        return view('clientes.index', compact('clients', 'clientimgs'));
+        //
     }
 
     /**
@@ -51,7 +48,11 @@ class ClientsController extends Controller
      */
     public function show($id)
     {
-        //
+        $category = Clients::find($id);
+        $clientimg = Imgclients::find($id);
+        $images = Imgclients::all();
+
+        return view('img_clients.show', compact('clientimg', 'images', 'category'));
     }
 
     /**
@@ -62,10 +63,9 @@ class ClientsController extends Controller
      */
     public function edit($id)
     {
-        $client = Clients::find($id);
-        $clientimgs = Imgclients::all();
+        $clientimg = Imgclients::find($id);
 
-        return view('clientes.edit', compact('client', 'clientimgs'));
+        return view('img_clients.edit', compact('clientimg'));
     }
 
     /**
@@ -77,11 +77,20 @@ class ClientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $clients = Clients::FindOrFail($id);
+        $clientimg = Imgclients::FindOrFail($id);
 
-        $clients->update($request->all());
+        if( $request->hasFile('img') ){
+            $file = $request->file('img');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            
+            $clientimg::whereId($id)->update([
+                'img_cliente' => $path,
+            ]);
+        }
 
-        return redirect()->route('clientes.index', compact('clients'));
+        return back();
     }
 
     /**
@@ -92,7 +101,7 @@ class ClientsController extends Controller
      */
     public function destroy($id)
     {
-        $client = Clients::find($id)->delete();
+        $clientimgs = Imgclients::find($id)->delete();
 
         return back();
     }
