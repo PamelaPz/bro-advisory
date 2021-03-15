@@ -13,6 +13,11 @@
                     </div>
                     <br>
                     <div class="form-group mx-3">
+                        <label for="corporate">Edificio / Corporativo</label>
+                        <input name="corporate" type="text" class="form-control" id="corporate" value="{{ $contacto->corporate }}" disabled>
+                    </div>
+                    <br>
+                    <div class="form-group mx-3">
                         <label for="address">Dirección</label>
                         <input name="address" type="text" class="form-control" id="address" value="{{ $contacto->address }}" disabled>
                     </div>

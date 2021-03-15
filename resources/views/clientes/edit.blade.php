@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'clientes', 'titlePage' => __('Clientes')])
+@extends('layouts.app', ['activePage' => 'clientes', 'titlePage' => __('Editar Clientes')])
 
 @section('content')
     <div class="content">
@@ -8,9 +8,6 @@
                     <h4 class="card-title">Editar Cliente # {{ $client->id }}</h4>
                 </div>
                 <div class="card-body">
-                    <div class="col-12 text-right">
-                        <a href="{{ route('clientes.index') }}" class="btn btn-sm btn-primary">Regresar</a>
-                    </div>
                     <form action="{{ route('clientes.update', $client->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('put')
@@ -29,37 +26,59 @@
                               <input name="h4_2" type="text" class="form-control" id="h4_2" value="{{ $client->h4_2 }}">
                           </div>
                         </div>
+                        <div class="form-group mr-auto ml-auto">
+                            <button type="submit" class="btn btn-primary btn-round">Actualizar valores</button>
+                        </div>
                         <br>
-                        <div class="form-group mx-3">
-                            <label for="subtitle" >Imágenes</label>
-                            <div style="display:flex; flex-wrap:wrap;justify-content: center;align-items: center;">
-                                @foreach ($clientimgs as $img)
-                                    @if ($client->category_id == $img->category_id)
-                                        <div class="text-center m-2" data-provides="fileinput" style="width:auto">
-                                            <img style="width: 100px;" src="{{ asset('storage/'.$img->img_cliente) }}">
-                                        </div>
-                                    @endif
-                                @endforeach
-                                <div class="pt-3" style="display: flex; justify-content: center;">
-                                    <a href="{{ route('img_clients.show', $client->category_id ) }}" type="button" class="btn btn-sm btn-primary">
-                                        Editar Imagenes
-                                    </a>
-                                    <!-- <form action="{{ route('img_clients.destroy', $img->id) }}" method="POST">
+                    </form>
+                    <div class="form-group mx-3">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <label for="subtitle" >Imágenes</label>
+                            </div>
+                            <div class="col-md-2"><a href="{{ route('imagenes.create') }}" class="btn btn-success btn-round  ">Nueva imagen</a></div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                <th style="width:4%">
+                                    ID
+                                </th>
+                                <th style="width:40%">
+                                    Imagen
+                                </th>
+                                <th style="width:10%">
+
+                                </th>
+                                </thead>
+                                <tbody>
+                                @foreach ($client->images as $image)
+                                    <tr>
+                                    <td>
+                                        {{$image->id}}
+                                    </td>
+                                    <td>
+                                        <img src="{{ asset('storage/'.$image->image) }}" style="width: 30%">
+                                    </td>
+                                    <td class="text-center">
+                                        {{-- <a href="{{ route('image.edit', $images->id ) }}" type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                        <i class="material-icons">edit</i>
+                                        </a> --}}
+                                        <form action="{{ route('imagenes.destroy', $image->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                        <i class="material-icons">close</i>
-                                        </button>
-                                    </form> -->
-                                </div>
-                            </div>
+                                            <button type="submit" rel="tooltip" title="Eliminar" class="btn btn-danger btn-link btn-sm">
+                                            <i class="material-icons">close</i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
-                        <br>
-                        <br>
-                        <div class="form-group mr-auto ml-auto">
-                            <button type="submit" class="btn btn-primary btn-round">Guardar</button>
-                        </div>
-                    </form>
+
+                    </div>
                 </div>
             </div>
         </div>

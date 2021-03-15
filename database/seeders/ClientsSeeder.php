@@ -18,25 +18,21 @@ class ClientsSeeder extends Seeder
             'h4' => 'Productos de',
             'span' => 'tesorería',
             'h4_2'=> 'en los que hemos participado y cerrado',
-            'category_id' => '1'
         ]);
         DB::table('clients')->insert([
             'h4' => 'Productos de',
             'span' => 'tesorería',
             'h4_2'=> 'en los que hemos valuado y cerrado',
-            'category_id' => '2'
         ]);
         DB::table('clients')->insert([
             'h4' => 'Banca de',
             'span' => 'inversión',
             'h4_2'=> 'en los que hemos estructurado y vendido',
-            'category_id' => '3'
         ]);
         DB::table('clients')->insert([
             'h4' => 'Asesor',
             'span' => 'financiero',
             'h4_2'=> 'líder en la infraestructura de financiamientos bursátiles',
-            'category_id' => '4'
         ]);
     }
 }

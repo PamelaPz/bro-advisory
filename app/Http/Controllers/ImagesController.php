@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Client;
+use App\Models\Image;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
-class ClientsController extends Controller
+class ImagesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,7 @@ class ClientsController extends Controller
      */
     public function index()
     {
-        $clients = Client::all();
-        // $clientimgs = Imgclients::all();
-
-        return view('clientes.index', compact('clients'));
+        //
     }
 
     /**
@@ -28,7 +24,9 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        //
+        $banner = Banner::get();
+
+        return view('banners.create', compact('banner'));
     }
 
     /**
@@ -39,7 +37,22 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $banner = Banner::create($request->all());
+        $banner = new Banner;
+
+        if( isset($request->banner) ){
+            $file = $request->file('banner');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $banner::create([
+                'title' => $request->title,
+                'subtitle' => $request->subtitle,
+                'banner' => $path,
+            ]);
+        }
+
+        return redirect()->route('banners.index', compact('banner'));
     }
 
     /**
@@ -50,9 +63,7 @@ class ClientsController extends Controller
      */
     public function show($id)
     {
-        $client = Client::find($id);
-
-        return view('clientes.show', compact('client'));
+        //
     }
 
     /**
@@ -63,10 +74,7 @@ class ClientsController extends Controller
      */
     public function edit($id)
     {
-        $client = Client::find($id);
-        // $clientimgs = Imgclients::all();
-
-        return view('clientes.edit', compact('client'));
+        //
     }
 
     /**
@@ -78,25 +86,7 @@ class ClientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $clients = Client::FindOrFail($id);
-
-        if( $request->hasFile('img1') ){
-            $img1 = $request->file('img1');
-            $name = str_replace(' ','-', $img1->getClientOriginalName());
-            $path = 'Images/' . $name;
-            Storage::putFileAs('/public/' . 'Images/', $img1, $name );
-            $clients::whereId($id)->update([
-                'h4' => $request->h4,
-                'span' => $request->span,
-                'h4_2' => $request->h4_2,
-                'client1' => $path,
-            ]);
-        }
-        else{
-            $clients->update($request->all());
-        }
-
-        return redirect()->route('clientes.index', compact('clients'));
+        //
     }
 
     /**
@@ -107,7 +97,7 @@ class ClientsController extends Controller
      */
     public function destroy($id)
     {
-        $client = Client::find($id)->delete();
+        $image = Image::find($id)->delete();
 
         return back();
     }

@@ -20,8 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call([IconsSeeder::class]);
         $this->call([AdvisorySeeder::class]);
         $this->call([ContactSeeder::class]);
-        $this->call([CategorySeeder::class]);
-        $this->call([ImgclientsSeeder::class]);
         $this->call([ClientsSeeder::class]);
+        $this->call([ImagesSeeder::class]);
     }
 }

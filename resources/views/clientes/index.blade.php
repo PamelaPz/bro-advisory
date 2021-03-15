@@ -13,13 +13,10 @@
             <div class="table-responsive">
               <table class="table">
                 <thead class=" text-primary">
-                  <th style="width:50%">
+                  <th>
                       Título sección
                   </th>
-                  <th style="width:auto">
-                    Imágenes
-                  </th>
-                  <th style="width:10%">
+                  <th>
                     
                   </th>
                 </thead>
@@ -32,13 +29,6 @@
                             {{$client->h4}} {{$client->span}} {{$client->h4_2}}
                           </a>
                         </div>
-                      </td>
-                      <td style="display: flex; flex-wrap: wrap;justify-content: space-between; align-items: center;">
-                        @foreach ($clientimgs as $img)
-                          @if ($client->category_id == $img->category_id)
-                            <img style="width: 80px;" src="{{ asset('storage/'.$img->img_cliente) }}">
-                          @endif
-                        @endforeach
                       </td>
                       <td class="text-center">
                           <a href="{{ route('clientes.edit', $client->id ) }}" type="button" rel="tooltip" title="Editar sección" class="btn btn-primary btn-link btn-sm">

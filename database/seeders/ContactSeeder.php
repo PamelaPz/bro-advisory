@@ -16,10 +16,11 @@ class ContactSeeder extends Seeder
     {
         DB::table('contacts')->insert([
             'h4' => 'ENCUENTRANOS EN',
-            'address' => 'Javier Barros Sierra 540, Torre 1, Piso 5 Santa Fe, C.P. 01210 CDMX',
-            'phone1' => '(55) 3633 2080',
-            'phone2' => '(55) 7672 4817',
-            'email' => 'abringas@bropartners.com',
+            'corporate' => 'Corporativo Azul Mazaryk',
+            'address' => 'Av. Pdte. Masaryk 61-901B, Polanco, Polanco V Secc, Miguel Hidalgo, 11560 Ciudad de México, CDMX',
+            'phone1' => '(55) 5244 5855',
+            'phone2' => '',
+            'email' => 'contacto@broad.mx',
         ]);
     }
 }

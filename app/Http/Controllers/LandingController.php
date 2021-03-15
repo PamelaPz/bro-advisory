@@ -8,8 +8,8 @@ use App\Models\Services;
 use App\Models\Icons;
 use App\Models\Advisory;
 use App\Models\Contact;
-use App\Models\Imgclients;
-use App\Models\Clients;
+use App\Models\Image;
+use App\Models\Client;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -26,12 +26,12 @@ class LandingController extends Controller
         $services = Services::all();
         $advisories = Advisory::all();
         $icons = Icons::all();
-        $clients = Clients::all();
-        $clientimgs = Imgclients::all();
+        $clients = Client::all();
+        $images = Image::all();
         $contact = Contact::find(1);
 
         return view('welcome', 
-        compact('banners', 'about', 'services', 'advisories', 'contact', 'clients', 'icons', 'clientimgs'));
+        compact('banners', 'about', 'services', 'advisories', 'contact', 'clients', 'icons', 'images'));
     }
 
     public function dashboard()
