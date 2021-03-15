@@ -1282,6 +1282,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     right: 5%;
     bottom: 5%;
     background: rgba(34, 161, 219, .6);
+    /* background: rgba(3, 42, 88, .6); */
     opacity: 0;
     transition: .8s ease;
 }

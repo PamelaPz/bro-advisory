@@ -187,10 +187,10 @@
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
-                                            <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li>
-                                            <li><a class="instagram-text-hvr" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
-                                            <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                                            <!-- <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li> -->
+                                            <li><a class="facebook-text-hvr" href="https://www.linkedin.com/in/andr%C3%A9s-romero-b064952b/"><i class="fab fa-linkedin"></i></a></li>
+                                            <!-- <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -207,10 +207,10 @@
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
-                                            <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li>
-                                            <li><a class="instagram-text-hvr" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
-                                            <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                                            <!-- <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li> -->
+                                            <li><a class="facebook-text-hvr" href="https://www.linkedin.com/in/mba-gerardo-lopez/"><i class="fab fa-linkedin"></i></a></li>
+                                            <!-- <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -227,10 +227,10 @@
                                     <div class="overlay d-flex justify-content-center align-items-center">
                                         <!--Team Social-->
                                         <ul class="team-social">
-                                            <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li>
-                                            <li><a class="instagram-text-hvr" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
-                                            <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                                            <!-- <li><a class="facebook-text-hvr" href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="twitter-text-hvr" href="javascript:void(0);">  <i class="fab fa-twitter"></i> </a></li> -->
+                                            <li><a class="facebook-text-hvr" href="https://www.linkedin.com/in/alejandro-bringas-155b6541/"><i class="fab fa-linkedin"></i></a></li>
+                                            <!-- <li><a class="pinterest-text-hvr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -338,7 +338,7 @@
 
 
 <!--testimonial section start-->
-<div class="testimonial-sec padding-top position-relative" id="testimonial-sec">
+{{--<div class="testimonial-sec padding-top position-relative" id="testimonial-sec">
     <div class="right-overlay"></div>
     <div class="container">
         <div class="testimonial-area padding-top padding-bottom">
@@ -386,7 +386,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 <!--testimonial section end-->
 
 
@@ -398,11 +398,11 @@
                 <div class="col-12 py-4 wow fadeInRight text-center" >
                     <h4 class="heading-title pb-3">{{$client->h4}} <span class="text-yellow">{{ $client->span }}</span> {{ $client->h4_2}}</h4>
                     <div class="sponser-tags owl-carousel owl-theme">
-                        @foreach ($clientimgs as $img)
-                            @if($client->category_id == $img->category_id)  
+                        @foreach ($images as $img)
+                            @if($client->id == $img->client_id)
                                 <div class="item">
                                     <div class="content-img">
-                                        <img class="img_gray" src="{{ asset('storage/'.$img->img_cliente) }}">
+                                        <img class="img_gray" src="{{ asset('storage/'.$img->image) }}">
                                     </div>
                                 </div>
                             @endif
@@ -474,10 +474,10 @@
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered .
                     </p> -->
                     <ul>
-                        <li style="width: 100% !important;"><i class="lni lni-map-marker addr"></i>{{ $contact->address }}</li>
+                        <li style="width: 100% !important;"><i class="lni lni-map-marker addr"></i>{{ $contact->corporate }} <br> {{ $contact->address }}</li>
                         <li><i class="lni lni-phone"></i>
                         <span>{{ $contact->phone1 }}</span>
-                        <span>{{ $contact->phone1 }}</span>
+                        <span>{{ $contact->phone2 }}</span>
                         </li>
                         <li><i class="lni lni-envelope"></i>{{ $contact->email }}</li>
                     </ul>
