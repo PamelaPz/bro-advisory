@@ -36,7 +36,7 @@
                             <div class="col-md-10">
                                 <label for="subtitle" >Imágenes</label>
                             </div>
-                            <div class="col-md-2"><a href="{{ route('imagenes.create') }}" class="btn btn-success btn-round  ">Nueva imagen</a></div>
+                            <div class="col-md-2"><a href="{{ route('imagenes.create', $client->id ) }}" class="btn btn-success btn-round  ">Nueva imagen</a></div>
                         </div>
                         <div class="table-responsive">
                             <table class="table">

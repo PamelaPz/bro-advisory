@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Image;
+use App\Models\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ImagesController extends Controller
 {
@@ -24,9 +26,10 @@ class ImagesController extends Controller
      */
     public function create()
     {
-        $banner = Banner::get();
+        $images = Image::get();
+        $clients = Client::all();
 
-        return view('banners.create', compact('banner'));
+        return view('imagenes.create', compact('images', 'clients'));
     }
 
     /**
@@ -37,22 +40,20 @@ class ImagesController extends Controller
      */
     public function store(Request $request)
     {
-        // $banner = Banner::create($request->all());
-        $banner = new Banner;
+        $image = new Image;
 
-        if( isset($request->banner) ){
-            $file = $request->file('banner');
+        if( $request ){
+            $file = $request->file('img');
             $name = str_replace(' ','-', $file->getClientOriginalName());
             $path = 'Images/' . $name;
             Storage::putFileAs('/public/' . 'Images/', $file, $name );
-            $banner::create([
-                'title' => $request->title,
-                'subtitle' => $request->subtitle,
-                'banner' => $path,
+            $image::create([
+                'image' => $path,
+                'client_id' => $request->cliente,
             ]);
         }
 
-        return redirect()->route('banners.index', compact('banner'));
+        return redirect()->route('clientes.index', compact('image'));
     }
 
     /**

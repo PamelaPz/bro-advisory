@@ -52,6 +52,13 @@ section {
   display: block;
 }
 
+select,
+.select_cliente {
+  width: auto;
+  padding: 5px 15px 5px 10px;
+  border: 1px dotted #d2d2d2;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -12895,12 +12902,6 @@ label {
 .form-control.form-control-danger:focus,
 .bmd-form-group.is-focused .form-control.form-control-danger {
   background-size: 100% 100%, 100% 100%, 0.9375rem 0.9375rem;
-}
-
-select,
-select.form-control {
-  -moz-appearance: none;
-  -webkit-appearance: none;
 }
 
 @media (min-width: 576px) {

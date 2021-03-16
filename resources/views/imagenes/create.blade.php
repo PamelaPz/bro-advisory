@@ -9,17 +9,25 @@
                 </div>
                 <div class="card-body">
                     <div class="col-12 text-right">
-                        <a href="{{ route('img_clients.show', $clientimg->category_id) }}" class="btn btn-sm btn-primary">Regresar</a>
+                        <a href="{{ route('clientes.index') }}" class="btn btn-sm btn-primary">Regresar</a>
                     </div>
-                    <form action="{{ route('img_clients.update', $clientimg->id) }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('imagenes.store', 1) }}" method="post" enctype="multipart/form-data">
                         @csrf
-                        @method('put')
                         <br>
                         <div class="form-group mx-3">
-                            <label for="subtitle" >Imágen</label>
-                            <div style="display:flex; flex-wrap:wrap;justify-content: center;align-items: center;">
-                                <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="width: 25%">
-                                        <img src="{{ asset('storage/'.$clientimg->img_cliente) }}" style="width: 70%">
+                            <div class="form-group col-10">
+                                <label for="subtitle" >Lista de clientes a donde lo agregará</label> <br>
+                                <select name="cliente" class="select_cliente">
+                                    @foreach ($clients as $cliente)
+                                        <option class="form-control" value="{{ $cliente->id }}">{{ $cliente->id }} {{ $cliente->h4 }} {{ $cliente->span }} {{ $cliente->h4_2 }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="form-group col-10">
+                                <label for="subtitle" >Imágen</label>
+                                <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="width: 60%">
                                     <div class="fileinput-preview fileinput-exists thumbnail img-raised"></div>
                                     <div>
                                         <label class="btn btn-raised btn-round btn-default btn-file" for="img">Seleccionar imágen:</label>
