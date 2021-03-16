@@ -1592,14 +1592,6 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 /* ===================================
 Our Cast sec css
 ====================================== */
-/* .sponser-tags .item{
-    height: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
 .content-img {
     height: 13rem;
     display: flex;
@@ -1610,7 +1602,7 @@ Our Cast sec css
     position: relative;
 }
 .content-img .img_div{
-    height: 9rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1618,9 +1610,7 @@ Our Cast sec css
 }
 .content-img img{
     width: 72% !important;
-    /* display: inline-block; */
     z-index: 1;
-    /* position: absolute; */
 }
 .content-img .img_gray{
     filter: grayscale(1) opacity(0.6);
@@ -1629,7 +1619,7 @@ Our Cast sec css
     filter: grayscale(0) opacity(1);
 }
 .content-img .txt_div {
-    height: 4rem;
+    height: 5rem;
     position: relative;
 }
 .content-img .txt_hover {
@@ -1638,7 +1628,7 @@ Our Cast sec css
 .content-img:hover .txt_hover {
     display: block;
 }
-.content_footer p{
+.txt_hover p{
     padding: 0;
     margin: 0;
     line-height: 1.2;
@@ -1646,17 +1636,16 @@ Our Cast sec css
 }
 .heading-title {
     color: var(--color-blackGrey);
-    font-size: 20px;
-    font-family: Oswald, sans-serif;
+    font-size: 13px;
     font-weight: 300;
 }
 .sub_title {
     color: var(--color-blueDark);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
 }
 .sub_years {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--color-gray);
 }
 .black {

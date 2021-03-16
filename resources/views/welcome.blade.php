@@ -407,7 +407,10 @@
                                         </div>
                                         <div class="txt_div">
                                             <div class="txt_hover">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing </p>
+                                                <p class="heading-title">Grupo BIMBO </p>
+                                                <p class="sub_title">Cross Currency Swap</p>
+                                                <p class="sub_years">10 años</p>
+                                                <p class="sub_title black">USD $40 millones </p>
                                             </div>
                                         </div>
                                     </div>
