@@ -50,6 +50,10 @@ class ImagesController extends Controller
             $image::create([
                 'image' => $path,
                 'client_id' => $request->cliente,
+                'name' => $request->name,
+                'text' => $request->text,
+                'year' => $request->year,
+                'money' => $request->money
             ]);
         }
 

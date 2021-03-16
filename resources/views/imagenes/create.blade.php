@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header card-header-primary">
-                    <h4 class="card-title">Editar Imagen</h4>
+                    <h4 class="card-title">Crear Nueva Imagen</h4>
                 </div>
                 <div class="card-body">
                     <div class="col-12 text-right">
@@ -16,14 +16,33 @@
                         <br>
                         <div class="form-group mx-3">
                             <div class="form-group col-10">
+                                <label for="name" style="left: 15px;">Nombre del Cliente</label>
+                                <input name="name" type="text" class="form-control" id="name" value=" ">
+                            </div>
+                            <br>
+                            <div class="form-group col-10">
+                                <label for="text" style="left: 15px;">Tipo de inversión o Actividad realizada</label>
+                                <input name="text" type="text" class="form-control" id="text" value=" ">
+                            </div>
+                            <br>
+                            <div class="form-group col-10">
+                                <label for="year" style="left: 15px;">Años</label>
+                                <input name="year" type="text" class="form-control" id="year" value=" ">
+                            </div>
+                            <br>
+                            <div class="form-group col-10">
+                                <label for="money" style="left: 15px;">Monto de dinero</label>
+                                <input name="money" type="text" class="form-control" id="money" value=" ">
+                            </div>
+                            <br>
+                            <div class="form-group col-10">
                                 <label for="subtitle" >Lista de clientes a donde lo agregará</label> <br>
-                                <select name="cliente" class="select_cliente">
+                                <select name="cliente" class="select_cliente col">
                                     @foreach ($clients as $cliente)
                                         <option class="form-control" value="{{ $cliente->id }}">{{ $cliente->id }} {{ $cliente->h4 }} {{ $cliente->span }} {{ $cliente->h4_2 }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <br>
                             <br>
                             <div class="form-group col-10">
                                 <label for="subtitle" >Imágen</label>

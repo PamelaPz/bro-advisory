@@ -13,18 +13,18 @@
                         @method('put')
                         <br>
                         <div class="row mx-1">
-                          <div class="form-group col-3">
-                              <label for="h4" style="left: 15px;">Título</label>
-                              <input name="h4" type="text" class="form-control" id="h4" value="{{ $client->h4 }}" required>
-                          </div>
-                          <div class="form-group col-4">
-                              <label for="span" style="left: 15px;">texto en amarillo</label>
-                              <input name="span" type="text" class="form-control" id="span" value="{{ $client->span }}">
-                          </div>
-                          <div class="form-group col-5">
-                              <label for="h4_2" style="left: 15px;"></label>
-                              <input name="h4_2" type="text" class="form-control" id="h4_2" value="{{ $client->h4_2 }}">
-                          </div>
+                            <div class="form-group col-3">
+                                <label for="h4" style="left: 15px;">Título</label>
+                                <input name="h4" type="text" class="form-control" id="h4" value="{{ $client->h4 }}" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="span" style="left: 15px;">texto en amarillo</label>
+                                <input name="span" type="text" class="form-control" id="span" value="{{ $client->span }}">
+                            </div>
+                            <div class="form-group col-5">
+                                <label for="h4_2" style="left: 15px;"></label>
+                                <input name="h4_2" type="text" class="form-control" id="h4_2" value="{{ $client->h4_2 }}">
+                            </div>
                         </div>
                         <div class="form-group mr-auto ml-auto">
                             <button type="submit" class="btn btn-primary btn-round">Actualizar valores</button>
@@ -41,10 +41,13 @@
                         <div class="table-responsive">
                             <table class="table">
                                 <thead class=" text-primary">
-                                <th style="width:4%">
+                                <th style="width:4%" class="text-center">
                                     ID
                                 </th>
-                                <th style="width:40%">
+                                <th style="width:30%" class="text-center">
+                                    Imagen
+                                </th>
+                                <th style="width:20%" class="text-center">
                                     Imagen
                                 </th>
                                 <th style="width:10%">
@@ -54,16 +57,19 @@
                                 <tbody>
                                 @foreach ($client->images as $image)
                                     <tr>
-                                    <td>
+                                    <td class="text-center">
                                         {{$image->id}}
                                     </td>
-                                    <td>
+                                    <td class="text-center">
                                         <img src="{{ asset('storage/'.$image->image) }}" style="width: 30%">
                                     </td>
                                     <td class="text-center">
-                                        {{-- <a href="{{ route('image.edit', $images->id ) }}" type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
-                                        <i class="material-icons">edit</i>
-                                        </a> --}}
+                                        {{$image->name}} <br>
+                                        {{$image->text}} <br>
+                                        {{$image->year}} <br>
+                                        {{$image->money}}
+                                    </td>
+                                    <td class="text-center">
                                         <form action="{{ route('imagenes.destroy', $image->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
