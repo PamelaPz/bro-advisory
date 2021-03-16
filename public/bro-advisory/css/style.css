@@ -1592,30 +1592,51 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 /* ===================================
 Our Cast sec css
 ====================================== */
-.sponser-tags .item{
+/* .sponser-tags .item{
     height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} */
 .content-img {
-    height: 5rem;
+    height: 13rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    position: relative;
+}
+.content-img .img_div{
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .content-img img{
     width: 72% !important;
-    display: inline-block;
+    /* display: inline-block; */
     z-index: 1;
+    /* position: absolute; */
 }
 .content-img .img_gray{
     filter: grayscale(1) opacity(0.6);
 }
-.content-img .img_gray:hover {
+.content-img:hover .img_gray {
     filter: grayscale(0) opacity(1);
+}
+.content-img .txt_div {
+    height: 4rem;
+    position: relative;
+}
+.content-img .txt_hover {
+    display: none;
+}
+.content-img:hover .txt_hover {
+    display: block;
 }
 .content_footer p{
     padding: 0;

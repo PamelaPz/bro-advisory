@@ -395,14 +395,21 @@
     <div class="container">
         <div class="row text-center">
             @foreach ($clients as $client)
-                <div class="col-12 py-4 wow fadeInRight text-center" >
-                    <h4 class="heading-title pb-3">{{$client->h4}} <span class="text-yellow">{{ $client->span }}</span> {{ $client->h4_2}}</h4>
+                <div class="col-12 py-1 wow fadeInRight text-center" >
+                    <h4 class="heading-title pb-2">{{$client->h4}} <span class="text-yellow">{{ $client->span }}</span> {{ $client->h4_2}}</h4>
                     <div class="sponser-tags owl-carousel owl-theme">
                         @foreach ($images as $img)
                             @if($client->id == $img->client_id)
                                 <div class="item">
                                     <div class="content-img">
-                                        <img class="img_gray" src="{{ asset('storage/'.$img->image) }}">
+                                        <div class="img_div">
+                                            <img class="img_gray" src="{{ asset('storage/'.$img->image) }}">
+                                        </div>
+                                        <div class="txt_div">
+                                            <div class="txt_hover">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             @endif
