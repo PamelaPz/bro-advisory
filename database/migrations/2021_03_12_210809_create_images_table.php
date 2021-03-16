@@ -17,7 +17,10 @@ class CreateImagesTable extends Migration
             $table->increments('id');
 
             $table->string('image');
-
+            $table->text('name');
+            $table->text('text');
+            $table->text('year');
+            $table->text('money');
             $table->integer('client_id')->unsigned();
 
             $table->foreign('client_id')->references('id')->on('clients')

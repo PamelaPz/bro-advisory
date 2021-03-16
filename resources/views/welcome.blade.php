@@ -407,10 +407,10 @@
                                         </div>
                                         <div class="txt_div">
                                             <div class="txt_hover">
-                                                <p class="heading-title">Grupo BIMBO </p>
-                                                <p class="sub_title">Cross Currency Swap</p>
-                                                <p class="sub_years">10 años</p>
-                                                <p class="sub_title black">USD $40 millones </p>
+                                                <p class="sub_title"> {{ $img->name }} </p>
+                                                <p class="sub_title blue">{{ $img->text }}</p>
+                                                <p class="sub_years">{{ $img->year }}</p>
+                                                <p class="sub_title black">{{ $img->money }} </p>
                                             </div>
                                         </div>
                                     </div>

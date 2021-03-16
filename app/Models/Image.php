@@ -11,7 +11,11 @@ class Image extends Model
 
     protected $fillable = ([
         'image',
-        'client_id'
+        'client_id',
+        'name',
+        'text',
+        'year',
+        'money',
     ]);
 
     public function client()

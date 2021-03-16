@@ -1592,6 +1592,14 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 /* ===================================
 Our Cast sec css
 ====================================== */
+/* .sponser-tags .item{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
 .content-img {
     height: 13rem;
     display: flex;
@@ -1636,17 +1644,20 @@ Our Cast sec css
 }
 .heading-title {
     color: var(--color-blackGrey);
-    font-size: 13px;
+    font-size: 20px;
+    font-family: Oswald, sans-serif;
     font-weight: 300;
 }
 .sub_title {
-    color: var(--color-blueDark);
     font-size: 12px;
-    font-weight: 400;
 }
 .sub_years {
     font-size: 12px;
     color: var(--color-gray);
+}
+.blue {
+    color: var(--color-blueDark);
+    font-weight: 400;
 }
 .black {
     color: var(--color-blackGrey);
