@@ -1,6 +1,30 @@
 @extends('layouts.front')
 
 @section('content')
+<div class="col-12 col-lg-4 d-flex align-items-center">
+                    <div class="side-footer text-white w-100">
+                        <div class="menu-company-details">
+                            <span>{{ $contact->phone1 }}</span>
+                            <span>{{ $contact->phone2 }}</span>
+                            <span>{{ $contact->email }}</span>
+                        </div>
+                        <ul class="social-icons-simple">
+                            <li><a class="facebook-text-hvr" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                            <li><a class="twitter-text-hvr" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                            <li><a class="youtube-text-hvr" href="javascript:void(0)"><i class="fab fa-youtube"></i> </a> </li>
+                            <li><a class="instagram-text-hvr" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                        </ul>
+                        <p class="text-white">&copy; 2020. Hecho con <span style="color: red;">&#9829;</span> por <a href="javascript:void(0);">Tooring</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <a id="close_side_menu" href="javascript:void(0);"></a>
+
+</header>
+<!--Header End-->
 
 <!--SLider sec start-->
 <section class="slider-area cursor-light">
