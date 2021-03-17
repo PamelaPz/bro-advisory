@@ -14,7 +14,7 @@
                             <li><a class="youtube-text-hvr" href="javascript:void(0)"><i class="fab fa-youtube"></i> </a> </li>
                             <li><a class="instagram-text-hvr" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
                         </ul>
-                        <p class="text-white">&copy; 2020. Hecho con <span style="color: red;">&#9829;</span> por <a href="javascript:void(0);">Tooring</p>
+                        <p class="text-white">&copy; {{ now()->year }}. Hecho con <span style="color: red;">&#9829;</span> por <a href="javascript:void(0);">Tooring</p>
                     </div>
                 </div>
             </div>

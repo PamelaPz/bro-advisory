@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <!-- Author -->
-    <meta name="author" content="Themes Industry">
+    <meta name="author" content="Tooring">
     <!-- description -->
     <meta name="description" content="Broad firma de asesoría financiera y legal a empresas">
     <!-- keywords -->
     <meta name="keywords" content="Broad firma de asesoría financiera y legal a empresas">
     <!-- Page Title -->
-    <title>BRO ADVISORY </title>
+    <title>BROAD </title>
     <!-- Favicon -->
     <link href="{{ asset('bro-advisory/img/favicon.ico') }}" rel="icon">
     <!-- Bundle -->
@@ -171,7 +171,7 @@
             </div>
             <!--Text-->
             <div class="col-lg-6 text-center text-lg-right">
-                <p class="company-about fadeIn">© 2020. Hecho con <span style="color: red;">&#9829;</span> por <a href="javascript:void(0);">Tooring</a>
+                <p class="company-about fadeIn">© {{ now()->year }}. Hecho con <span style="color: red;">&#9829;</span> por <a href="javascript:void(0);">Tooring</a>
                 </p>
             </div>
         </div>
