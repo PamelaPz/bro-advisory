@@ -157,7 +157,7 @@
         <div class="row align-items-center">
             <!--Social-->
             <div class="col-lg-6">
-                <div class="footer-social text-center text-lg-left ">
+                <div class="footer-social text-center text-lg-left text-white">
                     <ul class="list-unstyled">
                         <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-facebook-f"></i></a></li>
                         <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>

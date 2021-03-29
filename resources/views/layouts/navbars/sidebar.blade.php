@@ -6,7 +6,7 @@
   -->
   <div class="logo">
     <a href="{{ route('welcome') }}" class="simple-text logo-normal">
-      <img src="{{ asset('storage/Images/logo.png') }}" alt="" width="150px">
+      <img src="{{ asset('storage/Images/logo.png') }}" alt="" width="60px">
     </a>
   </div>
   <div class="sidebar-wrapper">
