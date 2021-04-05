@@ -483,7 +483,7 @@ header .simple-nav-logo{
 
 header .fixed-nav-logo{
     display: none;
-    width: 30%;
+    width: 40%;
 }
 header .navbar-brand img{
     width: 40%;
@@ -574,11 +574,11 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .header-appear .fixed-nav-logo{
     display: block;
     text-align: center;
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     margin: 0;
 }
 .header-appear .fixed-nav-logo img{
-    width: 90%;
+    width: 98%;
 }
 .header-appear .main-navigation .simple-navbar{
     display: flex;
