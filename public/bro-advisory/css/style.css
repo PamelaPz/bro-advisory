@@ -486,13 +486,17 @@ header .fixed-nav-logo{
     width: 30%;
 }
 header .navbar-brand img{
-    width: 30%;
+    width: 40%;
 }
 .sideNav img{
     width: 40%;
 }
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 header .main-navigation{
-    padding: 10px 0;
+    padding: 8px 0;
 }
 header .main-navigation .navbar{
     padding: 0;
