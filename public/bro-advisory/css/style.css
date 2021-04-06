@@ -2427,12 +2427,13 @@ Our Cast sec css
         font-size: 24px;
     }
     .header-appear .fixed-nav-links {
-         margin-right: 40px;
+        margin-right: 40px;
         margin-left: 0;
         display: none;
     }
     .sidemenu_btn {
-        top: 65px;
+        top: 35px;
+        margin-right: 0;
     }
     .side-menu .inner-wrapper {
         padding: 3.5rem 3rem;
@@ -2444,8 +2445,7 @@ Our Cast sec css
         font-size: 13px;
     }
     .header-appear .sidemenu_btn {
-        top: 45px;
-        right: 0;
+        top: 30px;
     }
     .header-appear ~ .side-menu .btn-close {
         top: 30px;
@@ -2491,7 +2491,7 @@ Our Cast sec css
         margin-bottom: 60px;
     }
     .about-sec .about-overlay {
-        background-color: var(--color-blackGrey);
+        background-color: var(--color-white);
         left: 0;
     }
     .about-sec .about-area {

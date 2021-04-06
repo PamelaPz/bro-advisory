@@ -77,7 +77,7 @@
             <div class="col-12 col-lg-6 services-area padding-top padding-bottom">
                 <div class="purple-overlay"></div>
                 <div class="row no-gutters wow fadeInLeft">
-                    <div class="col-12 col-lg-6 services text-center">
+                    <div class="col-6 col-lg-6 services text-center">
                         <div class="service-card">
                             <div class="icon-holder">
                                 <a class="scroll" href="#asesoria"><i class="lni lni-stats-up"></i></a>
@@ -85,7 +85,7 @@
                             <h4 class="card-heading">Deuda</h4>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 services text-center">
+                    <div class="col-6 col-lg-6 services text-center">
                         <div class="service-card">
                             <div class="icon-holder">
                                 <a class="scroll" href="#asesoria"><i class="lni lni-handshake"></i></a>
@@ -93,7 +93,7 @@
                                 <h4 class="card-heading">M&A</h4>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 services text-center">
+                    <div class="col-6 col-lg-6 services text-center">
                         <div class="service-card">
                             <div class="icon-holder">
                                 <a class="scroll" href="#asesoria"><i class="lni lni-invest-monitor"></i></a>
@@ -101,7 +101,7 @@
                                 <h4 class="card-heading">FX & IR</h4>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 services text-center">
+                    <div class="col-6 col-lg-6 services text-center">
                         <div class="service-card">
                             <div class="icon-holder">
                                 <a class="scroll" href="#asesoria"><i class="lni lni-investment"></i></a>
@@ -140,12 +140,12 @@
                         <div class="col-12 services pt-4" >
                             <h4 class="darkcolor py-4 text-center wow fadeInLeft">{{ $service->h4 }} <span style="color: #ff9c07">{{ $service->span }}</span></h4>
                             <div class="row">
-                                <div class="col wow fadeInLeft">
+                                <div class="col-lg-6 wow fadeInLeft px-4 px-lg-auto">
                                     <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service1 }}</span>
                                     <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service2 }}</span>
                                     <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service3 }}</span>
                                 </div>
-                                <div class="col wow fadeInRight">
+                                <div class="col-lg-6 wow fadeInRight px-4 px-lg-auto">
                                     <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service4 }}</span>
                                     <span class="sub-heading-text"><span class="pr-2 li">►</span>{{ $service->service5 }}</span>
                                 </div>
@@ -166,7 +166,7 @@
                                             @endforeach
                                         </div>
                                     <h4 class="card-heading pb-3 wow fadeInRight">{{ $advisory->subh4 }}</h4>
-                                    <p class="text-dark text-left sub-heading-text wow fadeInLeft">{{ $advisory->p1 }}</p>
+                                    <p class="text-dark text-left sub-heading-text wow fadeInLeft px-2 px-lg-auto">{{ $advisory->p1 }}</p>
                                     </div>
                                 </div>
                             @endforeach
