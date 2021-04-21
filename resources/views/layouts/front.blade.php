@@ -95,9 +95,9 @@
                                     <li class="nav-item"><a class="nav-link active link" href="#"><span>0</span><span data-count="1" class="num-nav">1</span><span>.</span>INICIO</a></li>
                                     <li class="nav-item"><a class="nav-link scroll link" href="#about-sec"><span>0</span><span data-count="2" class="num-nav">2</span><span>.</span>ACERCA DE</a></li>
                                     <li class="nav-item"><a class="nav-link scroll link" href="#company-portfolio-section"><span>0</span><span data-count="3" class="num-nav">3</span><span>.</span>EXPERIENCIA</a></li>
-                                    <li class="nav-item"><a class="nav-link scroll link" href="#testimonial-sec"><span>0</span><span data-count="4" class="num-nav">4</span><span>.</span>CLIENTES</a></li>
+                                    <!-- <li class="nav-item"><a class="nav-link scroll link" href="#testimonial-sec"><span>0</span><span data-count="4" class="num-nav">4</span><span>.</span>CLIENTES</a></li> -->
                                     <!-- <li class="nav-item"><a class="nav-link scroll link" href="#blog-sec"><span>0</span><span data-count="5" class="num-nav">5</span><span>.</span>BLOG</a></li> -->
-                                    <li class="nav-item"><a class="nav-link scroll link" href="#contact-sec"><span>0</span><span data-count="5" class="num-nav">5</span><span>.</span>CONTACTO</a></li>
+                                    <li class="nav-item"><a class="nav-link scroll link" href="#contact-sec"><span>0</span><span data-count="4" class="num-nav">4</span><span>.</span>CONTACTO</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -134,9 +134,9 @@
                             <li class="nav-item">
                                 <a class="nav-link scroll" href="#company-portfolio-section">EXPERIENCIA</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link scroll" href="#testimonial-sec">CLIENTES</a>
-                            </li>
+                            </li> -->
                             <!-- <li class="nav-item">
                                 <a class="nav-link scroll" href="#blog-sec">BLOG</a>
                             </li> -->
