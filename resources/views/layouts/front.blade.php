@@ -80,7 +80,7 @@
         <div class="main-navigation">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 col-lg-2">
+                    <div class="col-8 col-lg-3 d-flex">
                         <a class="navbar-brand simple-nav-logo link" href="{{ route('welcome') }}">
                             <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
@@ -88,7 +88,7 @@
                             <img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo">
                         </a>
                     </div>
-                    <div class="col-8 col-lg-10 simple-navbar d-flex align-items-center justify-content-end" id="simple-navbar">
+                    <div class="col-4 col-lg-9 simple-navbar d-flex align-items-center justify-content-end" id="simple-navbar">
                         <nav class="navbar navbar-expand-lg">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
@@ -120,7 +120,7 @@
             <div class="container">
                 <div class="row w-100 side-menu-inner-content">
                 <div class="col-12 d-flex justify-content-center align-items-center text-center">
-                    <a href="{{ route('welcome') }}" class="sideNav"><img src="{{ asset('bro-advisory/img/logo.png') }}" alt="logo"></a>
+                    <a href="{{ route('welcome') }}" class="sideNav"><img src="{{ asset('bro-advisory/img/logo-white.png') }}" alt="logo"></a>
                 </div>
                 <div class="col-12 col-lg-8">
                     <nav class="side-nav w-100">
