@@ -476,17 +476,19 @@ ul{margin-bottom: 0;}
    ====================================== */
 
 /*main navigation*/
+
 header .simple-nav-logo{
-    margin-right: 0;
+    /* margin: auto 0 !important;- */
+    margin: auto -4rem !important;
     text-align: center;
 }
 
 header .fixed-nav-logo{
     display: none;
-    width: 40%;
+    width: 100%;
 }
 header .navbar-brand img{
-    width: 40%;
+    width: 100%;
 }
 .sideNav img{
     width: 40%;
@@ -574,7 +576,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .header-appear .fixed-nav-logo{
     display: block;
     text-align: center;
-    /* transform: translateY(-3px); */
+    transform: translateY(10px);
     margin: 0;
 }
 .header-appear .fixed-nav-logo img{
@@ -735,7 +737,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     margin-top: .4rem;
     position: absolute;
     right: 30px;
-    top: 50px;
+    top: 35px;
     display: inline-block;
 }
 .sidemenu_btn span {
@@ -2426,13 +2428,20 @@ Our Cast sec css
     .side-nav .navbar-nav .nav-link {
         font-size: 24px;
     }
+    header .simple-nav-logo{
+        margin: auto 0 !important;
+    }
     .header-appear .fixed-nav-links {
         margin-right: 40px;
         margin-left: 0;
         display: none;
     }
+    .sideNav img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
     .sidemenu_btn {
-        top: 35px;
+        top: 28px;
         margin-right: 0;
     }
     .side-menu .inner-wrapper {
@@ -2453,10 +2462,10 @@ Our Cast sec css
     }
     .header-appear .fixed-nav-logo{
         margin-right: 0;
-        transform: translateY(-3px);
+        transform: translateY(0px);
     }
     .header-appear .fixed-nav-logo img {
-        width: 60%;
+        width: 100%;
     }
     .side-menu {
         width: 100%;
